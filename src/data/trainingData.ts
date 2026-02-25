@@ -720,6 +720,23 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
+        title: "Abkantbänke (B272)",
+        image: "/images/seite23-abkantbank.png",
+        content: [
+          "Gefährdungen: Hände oder Finger können eingequetscht oder abgeschert werden.",
+          "Maschinen standsicher aufstellen, so dass während des Abkantvorganges keine Quetsch- und Scherstellen entstehen. Bei handbetriebenen Abkantbänken müssen Gegengewicht und dessen Bahn verkleidet sein.",
+          "Bei kraftbetriebenen Abkantbänken Quetsch- und Scherstellen zwischen Maschinenständer und Biegewange mit Abweisblechen verkleiden. Sicherheitseinrichtungen: Fußschalter ohne Selbsthaltung und Not-Aus-Schalter (Drei-Stufen-Sicherheitsschalter empfohlen).",
+          "Bei Zweimannbedienung an Langabkant-/Schwenkbiegemaschinen: Zustimmungsfußschalter zwingend erforderlich, sofern keine Laserstrahlen-Absicherung vorhanden. Bei Mehrpersonenbedienung für jede Person eine Abschaltmöglichkeit vorsehen.",
+          "Für komplizierte Biegevorgänge Arbeitsabläufe planen. Zulässige Biegeradien beachten. Zum Verstellen der Werkstückauflagen nicht unter das Werkzeug greifen.",
+          "Beschäftigungsbeschränkungen: Jugendliche über 15 Jahre dürfen nur unter Aufsicht eines Fachkundigen arbeiten (wenn Berufsausbildung es erfordert). Jugendliche unter 15 Jahren dürfen nicht an diesen Maschinen beschäftigt werden.",
+        ],
+        highlights: [
+          "Drei-Stufen-Sicherheitsschalter empfohlen",
+          "Zustimmungsfußschalter bei Zweimannbedienung",
+          "Jugendliche unter 15: Verbot",
+        ],
+      },
+      {
         title: "Schmelzöfen (B233) – Gefährdungen & Schutzmaßnahmen",
         images: [
           "/images/seite18-schmelzofen1.png",
