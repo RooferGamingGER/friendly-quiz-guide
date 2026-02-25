@@ -216,14 +216,20 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
-        title: "Dachschutzwände",
+        title: "Dachschutzwände (B101)",
+        images: [
+          "/images/seite8-dachschutzwand1.png",
+          "/images/seite8-dachschutzwand2.png",
+          "/images/seite8-dachschutzwand3.png",
+        ],
         content: [
-          "Dachschutzwände nur bis zu einer Dachneigung von 60° einsetzen.",
-          "Bei Dachneigungen von mehr als 22,5° darf der Höhenunterschied zwischen Arbeitsplatz und Auffangeinrichtung nicht mehr als 5,00 m betragen.",
-          "Schutzwandhalter nur an tragfähigen Sparren befestigen.",
-          "Dachschutzwände mit einer Bauhöhe von mindestens 1,00 m verwenden, Oberkante nicht weniger als 0,80 m über Dachfläche.",
-          "Nur Netze oder Geflechte mit einer Maschenweite von höchstens 10 cm verwenden.",
-          "Beschäftigte bei Montage müssen gegen Absturz gesichert sein (z.B. Anseilschutz).",
+          "Gefährdungen: Fehlende Sicherungsmaßnahmen beim Auf- bzw. Abbau, nicht sachgerechter Befestigung sowie Ausführung von Dacharbeiten außerhalb des zulässigen Arbeitsbereiches können zu Absturzunfällen führen.",
+          "Dachschutzwände nur bis zu einer Dachneigung von 60° einsetzen. Bei Dachneigungen von mehr als 22,5° darf der Höhenunterschied zwischen Arbeitsplatz und Einrichtungen zum Auffangen abrutschender Beschäftigter nicht mehr als 5,00 m betragen.",
+          "Schutzwandhalter nur an durchgehenden, senkrecht zur Traufe verlaufenden, ausreichend tragfähigen Sparren befestigen. Dachschutzwände sind entsprechend der Aufbau- und Verwendungsanleitung des Herstellers zu verwenden.",
+          "Dachschutzwände mit einer Bauhöhe von mindestens 1,00 m verwenden und so anbringen, dass sich die Oberkante nicht weniger als 0,80 m über der Dachfläche befindet. Nur Netze oder Geflechte mit einer Maschenweite von höchstens 10 cm verwenden.",
+          "Beschäftigte, die Schutzwände montieren, müssen gegen Absturz gesichert sein, z.B. durch Anseilschutz. PSA gegen Absturz nur an geeigneten Anschlageinrichtungen befestigen (Tragkraft mind. 9 kN nachgewiesen).",
+          "Vorhandene Anschlageinrichtungen müssen vor der Benutzung auf ihre Tragfähigkeit überprüft werden. Der Vorgesetzte hat die Anschlageinrichtungen festzulegen.",
+          "Befestigung von Dachschutzwänden an Sicherheitsdachhaken nur nach AuV des Herstellers. Dachschutzwände müssen die zu sichernden Arbeitsplätze seitlich um mindestens 1,00 m überragen.",
         ],
       },
       {
