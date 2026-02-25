@@ -10,6 +10,7 @@ export interface TrainingPage {
   content: string[];
   highlights?: string[];
   warning?: string;
+  image?: string;
 }
 
 export interface QuizQuestion {
@@ -27,11 +28,12 @@ export const trainingSections: TrainingSection[] = [
       {
         title: "Unfallbeispiel: Arbeiten auf Dächern",
         warning: "Tödlicher Unfall – So nicht!",
+        image: "/images/seite2-unfall.png",
         content: [
-          "Der Ort: Eine ältere Lager- und Garagenhalle wurde umgebaut – mit Solaranlage auf dem Dach. Einige Trägerstangen waren schon montiert.",
-          "Die Situation: Ein Mitarbeiter sollte die restlichen Trägerstangen anbringen. Der Vorgesetzte wusste, dass das Dach mit alten Wellasbestplatten gedeckt war, unterbrochen von instabilen Lichtkuppeln. Er wies den Beschäftigten darauf hin, Laufbohlen auszulegen und ein Schutznetz anzubringen.",
-          "Der Fehler: Der Mitarbeiter nahm das Netz zwar entgegen, brachte es jedoch nicht an. Er legte keine Laufbohlen aus, sondern benutzte wenige Schalbretter. Er bestieg das Dach ohne PSA gegen Absturz.",
-          "Die Folgen: Als er abrutschte und auf die nicht tragfähige Lichtkuppel trat, brach diese durch. Der Beschäftigte stürzte 5 m tief auf den Betonfußboden und verstarb.",
+          "Der Ort: Eine ältere Lager- und Garagenhalle. Sie wurde gerade umgebaut – mit Solaranlage auf dem Dach. Einige Trägerstangen dafür waren schon montiert.",
+          "Die Situation: Ein Mitarbeiter sollte die restlichen Trägerstangen anbringen. Der Vorgesetzte wusste, dass das zu betretende Dach mit alten Wellasbestplatten gedeckt war, unterbrochen von instabilen Lichtkuppeln aus Kunststoff. Deshalb wies er den Beschäftigten darauf hin, unbedingt Laufbohlen auszulegen und ein Schutznetz anzubringen.",
+          "Der Fehler: Der Mitarbeiter nahm das Netz zwar entgegen, brachte es jedoch nicht an. Er legte keine Laufbohlen aus, sondern benutzte wenige Schalbretter. Er bestieg das Dach ohne PSA gegen Absturz. Als er abrutschte und versehentlich auf die nicht tragfähige Lichtkuppel trat, brach diese durch.",
+          "Die Folgen: Der Beschäftigte stürzte 5m tief auf den Betonfußboden und verstarb.",
         ],
       },
       {
