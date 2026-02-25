@@ -294,11 +294,21 @@ export const trainingSections: TrainingSection[] = [
     title: "Gerüste (Fang-, Fassaden-, Dachfanggerüste)",
     pages: [
       {
-        title: "Fanggerüste",
+        title: "Fanggerüste (B111)",
+        images: [
+          "/images/seite11-fanggeruest1.png",
+          "/images/seite11-fanggeruest2.png",
+        ],
         content: [
-          "Wenn bei Arbeiten auf Flächen mit max. 22,5° Neigung kein Seitenschutz angebracht werden kann, müssen Fanggerüste verwendet werden.",
-          "Fanggerüste müssen ein Auffangen abstürzender Personen gewährleisten.",
-          "Falsch dimensionierte oder unvollständig aufgebaute Fanggerüste können zu Absturzunfällen führen.",
+          "Gefährdungen: Falsch dimensionierte oder unvollständig aufgebaute Fanggerüste sowie fehlende Sicherungsmaßnahmen bei der Montage können zu Absturzunfällen führen.",
+          "Wenn bei Arbeiten auf einer Fläche mit nicht mehr als 22,5° Neigung an der Absturzkante kein Seitenschutz angebracht werden kann, müssen stattdessen Fanggerüste verwendet werden, die ein Auffangen abstürzender Personen gewährleisten.",
+          "Zur Reduzierung der Gefährdung den Höhenunterschied zwischen Absturzkante und Gerüstbelag möglichst minimieren. Der max. Höhenunterschied darf bei Fanggerüsten mit einer Breite der Fanglage von mind. 0,90 m nicht mehr als 2,00 m betragen.",
+          "Gerüstbauteile nicht ausbauen. Kein Material auf dem Fangbelag lagern.",
+        ],
+        highlights: [
+          "Max. Höhenunterschied Absturzkante–Belag: 2,00 m",
+          "Mindestbreite Fanglage: 0,90 m",
+          "Neigung max. 22,5°",
         ],
       },
       {
