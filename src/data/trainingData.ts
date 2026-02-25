@@ -704,6 +704,28 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
+        title: "Handtrennschleifmaschinen (B274) – Kennzeichnung & Schutzmaßnahmen",
+        images: [
+          "/images/seite25-trennschleif1.png",
+          "/images/seite25-trennschleif2.png",
+          "/images/seite25-trennschleif3.png",
+        ],
+        content: [
+          "Gefährdungen: Personen können von wegfliegenden Teilen getroffen werden. Trennscheiben können durch Verkanten zerspringen und zu Verletzungen führen.",
+          "Nur gekennzeichnete Schleifmaschinen und Trennscheiben verwenden. Zulässige Arbeitshöchstgeschwindigkeit entsprechend der Kennzeichnung beachten.",
+          "Handtrennschleifmaschinen müssen mit Schutzhauben ausgerüstet sein. Zum Aufspannen nur gleichgroße, zur Maschine gehörende Spannflansche verwenden (Empfehlung: mind. 41 mm Durchmesser).",
+          "Vor dem Aufspannen Klangprobe durchführen. Werkstücke sicher festlegen. Maschine stets beidhändig führen – nicht verkanten!",
+          "Trennscheiben nicht zum Seitenschleifen verwenden. Schutzbrille und Gehörschutz benutzen, bei gesundheitsgefährdenden Stäuben Atemschutz.",
+          "Drehzahl der Maschine darf nicht höher sein als die der Trennscheibe. Schleifscheiben nicht über das Verfallsdatum hinaus benutzen. Schleifwerkzeuge mit Verwendungseinschränkungen (VE) müssen gekennzeichnet sein.",
+        ],
+        highlights: [
+          "Spannflansch-Empfehlung: mind. 41 mm ∅",
+          "Nie verkanten – Zerspringungsgefahr!",
+          "Trennscheiben nie zum Seitenschleifen",
+          "Verfallsdatum beachten",
+        ],
+      },
+      {
         title: "Handbetriebene Scheren & Stanzen (B267)",
         images: [
           "/images/seite21-schere1.png",
