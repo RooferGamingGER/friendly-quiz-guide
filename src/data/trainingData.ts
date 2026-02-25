@@ -842,16 +842,47 @@ export const trainingSections: TrainingSection[] = [
     title: "Gefahrstoffe (Asbest, Mineralwolle)",
     pages: [
       {
-        title: "Asbestzementprodukte",
+        title: "Asbestzementprodukte (C311) – Gefährdungen & Organisation",
+        images: [
+          "/images/seite26-asbest1.png",
+          "/images/seite26-asbest2.png",
+        ],
         warning: "Krebsgefahr durch Asbestfasern!",
         content: [
-          "Asbestfasern können eine Asbestose, Lungenkrebs oder ähnliche Erkrankungen auslösen.",
-          "Die Bearbeitung mit abtragenden Geräten (Abschleifen, Hochdruckreinigen, Abbürsten) ist unzulässig!",
-          "Schutzausrüstung: Schutzanzug (mind. Kat. III, Typ 5) und Atemschutz (mind. P2-Filter).",
-          "Tätigkeiten müssen der Aufsichtsbehörde und Berufsgenossenschaft schriftlich angezeigt werden.",
-          "Arbeiten nur unter Leitung eines sachkundigen Aufsichtführenden (ständig anwesend).",
-          "Bauteile möglichst zerstörungsfrei ausbauen. Ausgebaute Produkte nicht wieder verwenden.",
-          "In Arbeitsbereichen nicht essen, trinken oder rauchen.",
+          "Asbestfasern können bis in die Alveolen der Lunge eingeatmet werden und eine Asbestose, Lungenkrebs o.ä. auslösen.",
+          "Von stark gebundenen Asbestzementprodukten gehen im eingebauten Zustand in der Regel keine Gefahren aus. Werden sie jedoch angebohrt, zerschlagen oder unsachgemäß gereinigt, können erhebliche Fasermengen freigesetzt werden.",
+          "Die Bearbeitung mit oberflächenabtragenden Geräten (Abschleifen, Hoch-/Niederdruckreinigen, Abbürsten) ist unzulässig!",
+          "Tätigkeiten sind der Aufsichtsbehörde und der Berufsgenossenschaft schriftlich anzuzeigen. Gefährdungsbeurteilung mit Arbeitsplan aufstellen und vorlegen.",
+          "Arbeiten unter Leitung eines sachkundigen Aufsichtführenden ausführen – dieser muss ständig anwesend sein. Jugendliche dürfen auch für Ausbildungszwecke nicht in Bereichen mit Asbestgefährdung beschäftigt werden.",
+          "Arbeitsbereiche abgrenzen und mit Warnschildern kennzeichnen. Arbeiten mit anderen Gewerken koordinieren.",
+        ],
+        highlights: [
+          "Bearbeitung mit abtragenden Geräten unzulässig!",
+          "Sachkundiger Aufsichtführender ständig anwesend",
+          "Jugendliche: Beschäftigungsverbot",
+        ],
+      },
+      {
+        title: "Asbestzementprodukte – Technische Schutzmaßnahmen",
+        content: [
+          "Beschichtete AZ-Wandbekleidungen mit drucklosem Wasserstrahl und weicharbeitenden Geräten (z.B. Schwamm) reinigen. Befestigungen sorgfältig lösen.",
+          "Bauteile möglichst zerstörungsfrei ausbauen, nicht aus Überdeckungen oder über Kanten ziehen. Befestigungsmittel, Bruchteile, Dichtungsschnüre in gekennzeichneten Behältern sammeln.",
+          "Keine Schuttrutschen verwenden. Material nicht werfen, sondern von Hand oder mit Hebezeug transportieren. Bei Außenwandbekleidungen Planen/Folien zum Auffangen auslegen.",
+          "Nur zugelassene Industriestaubsauger der Staubklasse H mit Zusatzanforderung 'Asbest' verwenden. Ausgebaute Produkte nicht wieder verwenden, Abfälle nicht zerkleinern.",
+        ],
+      },
+      {
+        title: "Asbestzementprodukte – PSA & Dacharbeiten",
+        content: [
+          "Schutzanzug (mind. EG-Kat. III, Typ 5) und Atemschutz mit mind. Partikelfilter P2 tragen.",
+          "Schutzkleidung bei Arbeitsunterbrechungen absaugen. Schutzkleidung und Atemschutz im Freien ablegen. Chemikalienschutzanzüge nach Schichtende in gekennzeichneten Behältern sammeln.",
+          "Straßenkleidung getrennt von Arbeitskleidung aufbewahren. Bei Unterbrechungen Hände reinigen, nach Arbeitsende gründlich duschen. In Arbeitsbereichen nicht essen, trinken oder rauchen.",
+          "Arbeiten auf Dächern: Bei Wellplattendächern lastverteilende Beläge oder Laufstege benutzen. Bei Absturzgefahr Absturzsicherungen vorsehen. Nach Dacharbeiten Dachrinnen reinigen und spülen.",
+        ],
+        highlights: [
+          "Schutzanzug Kat. III Typ 5 + P2-Filter",
+          "Staubsauger Klasse H 'Asbest'",
+          "Auf Dächern: lastverteilende Beläge nutzen",
         ],
       },
       {
