@@ -702,6 +702,24 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
+        title: "Rundmaschinen / Walzen (B270)",
+        image: "/images/seite22-rundmaschine.png",
+        warning: "Einzugsgefahr – Niemals Handschuhe tragen!",
+        content: [
+          "Gefährdungen: Kleidung und Schutzhandschuhe können von den Walzen erfasst und eingezogen werden – schwere Verletzungen insbesondere im Bereich der Hände.",
+          "Verkleidung der Antriebszahnräder nicht entfernen. Bei Rundmaschinen mit ausschwenkbaren Oberwalzen darf die Verkleidung schwenkbar sein. Bei handbetriebenen Rundmaschinen muss das Zahnradpaar neben der Handkurbel abgedeckt sein.",
+          "Kraftbetriebene Rundmaschinen mit Handschutzeinrichtungen (Schalter ohne Selbsthaltung, Not-Halt) ausrüsten – Betätigung ggf. über Reißleine oder Fußschalter.",
+          "Kraftbetriebene Rundmaschinen mit Spannhubbegrenzung von 8 mm oder Zweihandschaltung oder Drei-Stufen-Sicherheitsschalter ausrüsten.",
+          "Soweit möglich Handabweiser (Stangen, Abdeckbleche) vorsehen. Bei Aufstellung auf Quetsch- und Scherstellen achten – auch während des Biegevorganges.",
+          "Niemals Handschuhe tragen! Unterarmschutz mit Schutz der Handflächen empfohlen.",
+        ],
+        highlights: [
+          "Niemals Handschuhe tragen!",
+          "Spannhubbegrenzung: 8 mm",
+          "Not-Halt-Einrichtung erforderlich",
+        ],
+      },
+      {
         title: "Schmelzöfen (B233) – Gefährdungen & Schutzmaßnahmen",
         images: [
           "/images/seite18-schmelzofen1.png",
