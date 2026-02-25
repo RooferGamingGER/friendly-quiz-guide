@@ -636,6 +636,41 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
+        title: "Kreissägen (B265) – Schutzmaßnahmen",
+        images: [
+          "/images/seite20-kreissaege1.png",
+          "/images/seite20-kreissaege2.png",
+          "/images/seite20-kreissaege3.png",
+        ],
+        content: [
+          "Gefährdungen: Schnittverletzungen, Verletzungen durch Rückschlag des Werkstückes und Gehörschädigung.",
+          "Betriebsanleitung beachten. Gehörschutz und Sicherheitsschuhe benutzen. Enganliegende Kleidung tragen. Gefahrenbereich von 120 mm rund um das Sägeblatt beachten.",
+          "Spaltkeil nach Größe und Dicke des Sägeblattes auswählen. Abstand Spaltkeil–Zahnkranz max. 8 mm. Vor Werkzeugwechsel oder Wartung Stecker ziehen.",
+          "Sägeblätter nach dem Ausschalten nicht durch seitliches Gegendrücken abbremsen. Auf richtige Anbringung und Einstellung der Schutzhaube achten.",
+          "Hilfseinrichtungen benutzen: Parallelanschlag, Winkelanschlag, Keilschneideeinrichtung, Schiebestock. Bei schmalen Werkstücken Schiebestock verwenden (Abstand Parallelanschlag–Sägeblatt < 120 mm).",
+          "Tischeinlage auswechseln bei Spalt > 5 mm beiderseits der Schnittfuge. Standplatz seitlich vom Gefahrbereich. Splitter nie mit der Hand aus dem Bereich des laufenden Sägeblatts entfernen.",
+        ],
+        highlights: [
+          "Spaltkeil–Zahnkranz: max. 8 mm",
+          "Gefahrenbereich: 120 mm um Sägeblatt",
+          "Schiebestock bei < 120 mm Abstand",
+        ],
+      },
+      {
+        title: "Kreissägen – Handmaschinen & Sägeblätter",
+        content: [
+          "Handkreissägen: Spaltkeil-Abstand vom Zahnkranz max. 5 mm (wenn laut Betriebsanleitung gefordert). Schnitttiefe bei Vollholz höchstens 10 mm mehr als Werkstückdicke einstellen.",
+          "Handmaschine nicht mit laufendem Sägeblatt ablegen. Der gesamte Zahnkranz über der Auflage muss mit fester Verkleidung versehen sein.",
+          "Kreissägeblätter: Nur Blätter verwenden, die mit Name oder Zeichen des Herstellers gekennzeichnet sind. Bei Verbundkreissägeblättern muss die höchstzulässige Drehzahl angegeben sein – nicht überschreiten.",
+          "Lärmarme Sägeblätter benutzen. Beschädigte Sägeblätter (Risse, Verformungen, Brandflecken) aussortieren. Keine Sägeblätter aus hochlegiertem Schnellarbeitsstahl (HSS) verwenden.",
+        ],
+        highlights: [
+          "Handkreissäge: Spaltkeil max. 5 mm",
+          "Schnitttiefe: max. Werkstückdicke + 10 mm",
+          "Keine HSS-Sägeblätter verwenden",
+        ],
+      },
+      {
         title: "Schleif- & Trennmaschinen",
         content: [
           "Nur gekennzeichnete Schleifmaschinen und Schleifkörper verwenden.",
