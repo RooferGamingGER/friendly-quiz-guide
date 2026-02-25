@@ -602,14 +602,37 @@ export const trainingSections: TrainingSection[] = [
     title: "Maschinen & Werkzeuge",
     pages: [
       {
-        title: "Handkettensägen & Kreissägen",
+        title: "Handkettensägen (B259) – Gefährdungen & PSA",
+        images: [
+          "/images/seite19-kettensaege1.png",
+          "/images/seite19-kettensaege2.png",
+        ],
         content: [
-          "Handkettensägen: Schnittverletzungen durch Rückschlag, Gehörschädigung, Vergiftungsgefahr durch Abgase möglich.",
-          "Schnittschutzkleidung, -schuhe, Schutzhelm mit Gesichtsschutz und Gehörschutz tragen.",
-          "Vor Arbeitsbeginn Kettenbremse prüfen. Nur scharfe Ketten verwenden. Nicht über Schulterhöhe sägen.",
-          "Kreissägen: Spaltkeil nach Größe des Sägeblatts auswählen. Abstand Spaltkeil–Zahnkranz max. 8 mm.",
-          "Gefahrenbereich 120 mm rund um das Sägeblatt beachten. Gehörschutz und Sicherheitsschuhe benutzen.",
-          "Bei schmalen Werkstücken Schiebestock verwenden (Abstand Parallelanschlag–Sägeblatt < 120 mm).",
+          "Gefährdungen: Schnittverletzungen insbesondere durch Rückschlag der Handkettensäge und Gehörschädigung. Bei kraftstoffbetriebenen Sägen Vergiftungsgefahr durch Abgase.",
+          "Im Rahmen der Gefährdungsbeurteilung prüfen, ob alternative Maschinen (z.B. Handkreissäge, Pendelsäbelsäge) eingesetzt werden können. Betriebsanleitung des Herstellers beachten.",
+          "PSA tragen: Schnittschutzkleidung oder Kleidung mit Schnittschutzeinlagen, Schnittschutzschuhe, Schutzhelm mit Gesichtsschutz, Gehörschutz, ggf. Handschuhe mit Schnittschutzeinlage.",
+          "Vor Arbeitsbeginn Wirksamkeit der Kettenbremse prüfen. Leerlaufdrehzahl so einstellen, dass die Kette beim Starten nicht mitläuft.",
+          "Nur scharfe Ketten verwenden und so spannen, dass sie rundum am Schwert anliegen. Möglichst rückschlagarme Sägeketten verwenden. Krallenanschlag verwenden.",
+        ],
+        highlights: [
+          "Kettenbremse vor Arbeitsbeginn prüfen",
+          "Rückschlagarme Sägeketten bevorzugen",
+          "Vollständige Schnittschutz-PSA tragen",
+        ],
+      },
+      {
+        title: "Handkettensägen – Betrieb & Sicherheit",
+        content: [
+          "Stets für einen festen und sicheren Stand sorgen. Nicht über Schulterhöhe sägen. Motorsäge stets mit beiden Händen festhalten.",
+          "Beim Startvorgang Motorkettensäge sicher abstützen und festhalten – die Kette darf den Boden nicht berühren. Motorsäge nur mit laufender Sägekette aus dem Holz ziehen.",
+          "Nicht mit Schienenspitze sägen – Rückschlaggefahr! Bei Stechschnitten (z.B. Altbausanierung) rückschlagarme Sägeketten verwenden.",
+          "Darauf achten, dass sich keine weiteren Personen im Gefahrbereich aufhalten. Kettensägen mit Verbrennungsmotoren nicht in geschlossenen Räumen, Gruben oder Gräben verwenden.",
+          "Motor abstellen, bevor die Säge abgelegt wird. Bei Transport Kettenschutz aufsetzen. Bei Wartungs- und Instandsetzungsarbeiten Motor abschalten bzw. Stecker herausziehen.",
+        ],
+        highlights: [
+          "Nie über Schulterhöhe sägen",
+          "Nie mit Schienenspitze sägen",
+          "Motor aus vor Ablegen der Säge",
         ],
       },
       {
