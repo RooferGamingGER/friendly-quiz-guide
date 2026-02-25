@@ -84,18 +84,24 @@ export const trainingSections: TrainingSection[] = [
     title: "Verkehrswege auf Dächern",
     pages: [
       {
-        title: "Verkehrswege auf Dächern",
+        title: "Verkehrswege auf Dächern (A027)",
+        images: [
+          "/images/seite4-aufstieg.png",
+          "/images/seite4-laufstege.png",
+          "/images/seite4-verkehrsweg.png",
+        ],
         content: [
           "Gefährdungen: Unzureichend eingerichtete Verkehrswege können Stolpern, Rutschen, Stürzen und Abstürze zur Folge haben.",
-          "Verkehrswege müssen so eingerichtet werden, dass die Gefährdung durch Absturz so weit als möglich vermieden wird.",
-          "Verkehrswege so herrichten, dass sich die Beschäftigten bei jeder Witterung sicher bewegen können.",
-          "Sind Arbeitsplätze nur über nicht durchsturzsichere Dachflächen zu erreichen, Laufstege mit beidseitigem Seitenschutz verwenden.",
+          "Allgemeines: Verkehrswege so einrichten, dass die Gefährdung durch Absturz von Beschäftigten so weit als möglich vermieden wird. Als Verkehrswege dürfen auch vorhandene Einrichtungen für Schornsteinfegerarbeiten nach DIN18160-5 verwendet werden.",
+          "Verkehrswege so herrichten, dass sich die Beschäftigten bei jeder Witterung sicher bewegen können. Sind Anlagen, Einrichtungen und andere Arbeitsplätze nur über nicht durchsturzsichere Dachflächen zu erreichen, Laufstege mit beidseitigem Seitenschutz verwenden.",
+          "Schutzmaßnahmen: Verkehrswege müssen für die jeweilige Nutzung möglichst eben und ohne Stolperstellen sein, durch geeignete Oberflächenbeschaffenheit rutschsicher gestaltet werden (z.B. rutschhemmende Matten), beleuchtet sein, wenn das Tageslicht nicht ausreicht, und freigehalten werden.",
         ],
         highlights: [
           "Mindestbreite Laufstege: 0,50 m",
           "Bei Neigung über 1:5 (ca. 11°): Trittleisten aufbringen",
           "Bei Neigung über 1:1,75 (ca. 30°): Trittstufen aufbringen",
-          "Als Aufstiege bevorzugt Treppen verwenden",
+          "Als Aufstiege Treppen verwenden",
+          "Anlegeleitern nur wenn keine sichereren Arbeitsmittel möglich",
         ],
       },
     ],
