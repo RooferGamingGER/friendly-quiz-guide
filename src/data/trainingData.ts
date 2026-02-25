@@ -1016,6 +1016,69 @@ export const trainingSections: TrainingSection[] = [
           "Abdeckungen müssen unverschieblich und tragfähig sein (mind. Sortierklasse S10).",
         ],
       },
+      {
+        title: "Dacharbeiten (C344) – Dachlatten: Qualität & Bestellung",
+        image: "/images/seite28-dachlatten1.png",
+        warning: "Bei falscher Dimensionierung oder unzureichender Qualität können Dachlatten beim Begehen brechen – Absturzgefahr!",
+        content: [
+          "Werden gelattete Dachflächen als Arbeitsplätze verwendet, müssen die Dachlatten den Qualitäts- bzw. Festigkeitskriterien entsprechen (mind. S10).",
+          "Für Arbeiten auf Flächen mit mehr als 45° Neigung besondere Arbeitsplätze schaffen. Besondere Arbeitsplätze können hierbei auch gelattete Dachflächen sein.",
+          "Bei der Bestellung von Dachlatten die genaue Bezeichnung beachten, z. B.: Dachlatte, DIN 4074-1, S10 – Fi/Ta, 40 × 60 oder Dachlatte, DIN EN 338, Festigkeitsklasse C24M Fi/Ta, 40 × 60.",
+          "Dachlatten entsprechend der Qualitäts- bzw. Festigkeitskriterien sind an den Stirnseiten rot eingefärbt.",
+        ],
+        highlights: [
+          "Mindestens Sortierklasse S10",
+          "Stirnseiten rot eingefärbt",
+          "Ab 45° Neigung besondere Arbeitsplätze",
+        ],
+      },
+      {
+        title: "Dachlatten – Einbau & Prüfung",
+        images: ["/images/seite28-dachlatten4.png"],
+        content: [
+          "Bei der Befestigung der Dachlatten auf den Sparren Mindestnagelabstände einhalten. Dachlatten, die beim Einbau beschädigt wurden (z. B. Aufreißen der Stirnseiten), ausbauen.",
+          "Dachlatten können ohne rechnerischen Nachweis eingebaut werden: S10 max. 80 cm Stützweite (30 × 50 mm) bzw. 100 cm (40 × 60 mm).",
+          "Bei Verwendung von Nägeln ergibt sich eine Mindestsparrenbreite von 70 mm. Wird sie unterschritten, kann durch entsprechend breite Konterlatten die erforderliche Breite erreicht werden.",
+          "Werden Sparrenabstände über 1 Meter geplant, müssen Dachlatten für Querschnitt und Verbindungsmittel rechnerisch nachgewiesen werden.",
+          "Vor dem Einbau Dachlatten auf Farbkennzeichnung prüfen. Bei visuell sortierten Dachlatten grobe Holzfehler (Äste, Holzrisse, Baumkanten) aussortieren oder ausschneiden.",
+        ],
+        highlights: [
+          "S10: max. 80 cm Stützweite (30×50)",
+          "Mindestsparrenbreite 70 mm bei Nägeln",
+          "Beschädigte Latten sofort ausbauen",
+        ],
+      },
+      {
+        title: "Dacharbeiten – Arbeitsplätze & Tabellen",
+        images: ["/images/seite28-dachlatten2.png", "/images/seite28-dachlatten3.png"],
+        content: [
+          "Für Dacharbeiten müssen Arbeitsplätze so eingerichtet sein, dass sie entsprechend der Art der baulichen Anlage, den wechselnden Bauzuständen, den Witterungsverhältnissen und den auszuführenden Arbeiten ein sicheres Arbeiten gewährleisten.",
+          "Besondere Beachtung: nicht begehbare Bauteile (Lichtkuppeln, Lichtbänder, Glasdächer, Faserzement-Wellplatten), Schächte, elektrische Anlagen (Freileitungen, Sendeanlagen), Dachüberstände, Dachgauben und Attikahöhe.",
+          "Die Tabelle zeigt die erforderlichen Arbeitsplatzarten je nach Tätigkeit und Dachneigung (≤22,5° / >22,5°–45° / >45°–60° / >60°).",
+        ],
+        highlights: [
+          "Arbeitsplatz abhängig von Neigung & Tätigkeit",
+          "Witterung und Bauzustand berücksichtigen",
+          "Nicht begehbare Bauteile besonders sichern",
+        ],
+      },
+      {
+        title: "Dacharbeiten – Absturzsicherung & PSA",
+        content: [
+          "Arbeitsplätze und Verkehrswege so einrichten, dass die Gefährdung durch Absturz so weit als möglich vermieden wird.",
+          "Rangfolge der Schutzmaßnahmen: Seitenschutz → Auffangeinrichtungen → PSA gegen Absturz.",
+          "Arbeitsplätze und Verkehrswege auf Flächen mit ≤22,5° Neigung durch Seitenschutz gegen Absturz sichern.",
+          "Grundsätzlich darf PSA gegen Absturz bei Dacharbeiten nicht verwendet werden. In Ausnahmefällen nur bei geeigneten Anschlageinrichtungen und kurzzeitigen Dacharbeiten.",
+          "Maßnahmen zur Rettung festlegen. Der Vorgesetzte hat geeignete Anschlageinrichtungen festzulegen und dafür zu sorgen, dass die PSA verwendet wird.",
+          "Beschäftigte mit praktischen Übungen in die Verwendung von PSA gegen Absturz unterweisen.",
+        ],
+        warning: "PSA gegen Absturz bei Dacharbeiten grundsätzlich nicht zulässig – nur in begründeten Ausnahmefällen!",
+        highlights: [
+          "Rangfolge: Seitenschutz → Auffang → PSAgA",
+          "PSAgA nur in Ausnahmefällen",
+          "Praktische Unterweisung Pflicht",
+        ],
+      },
     ],
     quizQuestions: [
       {
