@@ -312,17 +312,53 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
-        title: "Fassadengerüste",
+        title: "Fassadengerüste (B113) – Gefährdungen & Allgemeines",
+        images: [
+          "/images/seite12-fassadengeruest1.png",
+          "/images/seite12-fassadengeruest2.png",
+        ],
         content: [
-          "Gerüstbau nur unter ständiger Aufsicht einer fachkundigen Person und von fachlich geeigneten Beschäftigten ausführen.",
-          "Beschädigte Gerüstbauteile nicht verwenden. Nicht einsatzbereite Gerüste kennzeichnen und Zugang absperren.",
-          "Gerüst fortlaufend mit dem Aufbau zug- und druckfest an tragfähigen Bauteilen verankern.",
-          "Jede benutzte Gerüstlage muss voll ausgelegt und über einen sicheren Zugang erreichbar sein.",
-          "Seitenschutz besteht aus Geländerholm, Zwischenholm und Bordbrett – an Außen- und Stirnseiten montieren.",
-          "Keine konstruktiven Änderungen am Gerüst vornehmen (z.B. Entfernen von Seitenschutz, Verankerungen).",
+          "Gefährdungen: Unvollständig aufgebaute Gerüste sowie eigenmächtig vorgenommene Veränderungen am Gerüst können zu Absturzunfällen oder Gerüstumstürzen führen.",
+          "Unterschieden werden: Systemgerüste aus vorgefertigten Bauteilen und Stahlrohrkupplungsgerüste. Abhängig von den durchzuführenden Arbeiten Lastklasse und Breitenklasse wählen sowie Ständer- und Riegelabstände und Belagstärke festlegen.",
         ],
         highlights: [
+          "Lastklassen 1–6 (0,75–6,00 kN/m²)",
+          "Breitenklassen W06–W2,4",
+        ],
+      },
+      {
+        title: "Fassadengerüste – Montage & Verankerung",
+        content: [
+          "Montage: Gerüstbau nur unter ständiger Aufsicht einer fachkundigen Person und von fachlich geeigneten Beschäftigten ausführen lassen.",
+          "Beschädigte Gerüstbauteile nicht verwenden. Nicht einsatzbereite Gerüste mit Verbotszeichen kennzeichnen und den Zugang absperren. Fertiggestellte und geprüfte Gerüste kennzeichnen.",
+          "Verankerung: Gerüst fortlaufend mit dem Aufbau zug- und druckfest an tragfähigen Bauteilen der Fassade verankern. Verankerungen in der Nähe der Gerüstknotenpunkte anordnen.",
+        ],
+      },
+      {
+        title: "Fassadengerüste – Zugänge & Gerüstbelag",
+        content: [
+          "Alle Arbeitsplätze müssen über sichere Zugänge erreichbar sein. Treppen einbauen, wenn umfangreiche Materialien transportiert werden, die Aufstiegshöhe mehr als 10 m beträgt oder umfangreiche Arbeiten ausgeführt werden.",
+          "Sind Aufzüge, Transportbühnen oder Treppen nicht einsetzbar, können Leitern verwendet werden. Leitern als Zugänge nur innenliegend einbauen. Klappen in Durchstiegsbelägen unmittelbar nach dem Durchstieg schließen.",
+          "Jede benutzte Gerüstlage muss voll ausgelegt und über einen sicheren Zugang erreichbar sein. Bei umlaufender Einrüstung den Gerüstbelag in voller Breite um die Ecke herumführen.",
+          "Der Belag darf nicht wippen oder ausweichen. An der Innenseite des Gerüstes darf der Abstand zwischen Belag und Bauwerk höchstens 0,30 m betragen.",
+        ],
+        highlights: [
+          "Treppen ab 10 m Aufstiegshöhe",
           "Abstand Belag – Bauwerk: max. 0,30 m",
+        ],
+      },
+      {
+        title: "Fassadengerüste – Seitenschutz & Benutzung",
+        content: [
+          "Seitenschutz besteht aus Geländerholm, Zwischenholm und Bordbrett und ist an den Außen- und Stirnseiten des Gerüstes zu montieren.",
+          "An der Innenseite Seitenschutz montieren, wenn der Abstand zwischen Belag und Bauwerk mehr als 0,30 m beträgt. An der Innenseite darf auf das Bordbrett verzichtet werden, wenn Arbeiten an der Fassade ausgeführt werden.",
+          "Bei innenliegenden Leitergängen muss der Verkehrsweg auch in nicht benutzten Gerüstlagen mit Seitenschutz gesichert werden.",
+          "Für die betriebssichere Herstellung und den Abbau ist der Unternehmer der Gerüstbauarbeiten verantwortlich, für die Erhaltung und sichere Verwendung der Benutzer.",
+          "Keine konstruktiven Änderungen am Gerüst vornehmen (z.B. Entfernen von Seitenschutz, Verankerungen, Diagonalen).",
+          "Bei übereinanderliegenden Gerüstfeldern darf nur eine Gerüstlage mit der zulässigen Last belastet werden. Überlastung vermeiden, einen ausreichend breiten freien Durchgang belassen – Mindestbreite 20 cm.",
+        ],
+        highlights: [
+          "Seitenschutz: Geländerholm + Zwischenholm + Bordbrett",
           "Freier Durchgang: mind. 20 cm Breite",
         ],
       },
