@@ -671,15 +671,36 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
-        title: "Schleif- & Trennmaschinen",
+        title: "Schleifmaschinen (B273) – Schutzmaßnahmen",
+        images: [
+          "/images/seite24-schleif1.png",
+          "/images/seite24-schleif2.png",
+        ],
         content: [
-          "Nur gekennzeichnete Schleifmaschinen und Schleifkörper verwenden.",
-          "Vor dem Aufspannen Klangprobe durchführen. Probelauf seitlich außerhalb des Gefahrenbereiches.",
-          "Drehzahl der Maschine darf nicht höher sein als die zulässige Umdrehungszahl des Schleifkörpers.",
-          "Handtrennschleifmaschinen müssen mit Schutzhauben ausgerüstet sein.",
-          "Trennscheiben nicht zum Seitenschleifen verwenden!",
-          "Schutzbrille und Gehörschutz benutzen. Bei gesundheitsgefährdenden Stäuben Atemschutz verwenden.",
-          "Schleifscheiben nicht über das Verfallsdatum hinaus benutzen.",
+          "Gefährdungen: Personen können von wegfliegenden Teilen und zerspringenden Schleifkörpern getroffen werden. Die Augen sind durch Schleiffunken besonders gefährdet.",
+          "Nur gekennzeichnete Schleifmaschinen und Schleifkörper verwenden. Zulässige Arbeitshöchstgeschwindigkeit beachten. Entsprechend der Arbeit den richtigen Schleifkörper auswählen.",
+          "Vor dem Aufspannen Klangprobe vornehmen. Schleifkörper ordnungsgemäß aufspannen, gleich große Spannflansche verwenden, ggf. elastische Zwischenlagen einsetzen.",
+          "Probelauf durchführen – dabei seitlich außerhalb des Gefahrenbereiches aufhalten. Drehzahl der Maschine darf nicht höher sein als die zulässige Umdrehungszahl des Schleifkörpers.",
+          "Schleifkörperbohrungen nicht durch Reduzierringe oder Vergießen verkleinern. Wechsel/Aufspannen nur durch unterwiesene Personen.",
+          "Schleifscheiben nicht über das Verfallsdatum hinaus benutzen. Schutzhaube und Werkstückauflage regelmäßig nachstellen. Schutzbrille/Gesichtsschutz und Gehörschutz benutzen.",
+        ],
+        highlights: [
+          "Klangprobe vor dem Aufspannen",
+          "Drehzahl ≤ zulässige Umdrehungszahl",
+          "Nicht über Verfallsdatum hinaus benutzen",
+          "Spalt Schutzhaube–Schleifkörper: ≤ 3 mm",
+        ],
+      },
+      {
+        title: "Schleifmaschinen – Handschleifmaschinen & Trennscheiben",
+        content: [
+          "Handschleifmaschinen: Nur gleichgroße, zur Maschine gehörende Spannflansche verwenden und mit Spezialschlüssel aufspannen. Probelauf durchführen.",
+          "Handschleifmaschinen nur mit Schutzhauben verwenden. Schleifwerkzeuge mit Verwendungseinschränkungen (VE) müssen entsprechend gekennzeichnet sein.",
+          "Trennscheiben nicht zum Seitenschleifen verwenden! Bei gesundheitsgefährdenden Stäuben Atemschutz verwenden.",
+        ],
+        highlights: [
+          "Trennscheiben: nicht zum Seitenschleifen!",
+          "Handschleifmaschinen nur mit Schutzhaube",
         ],
       },
       {
