@@ -249,6 +249,19 @@ export const trainingSections: TrainingSection[] = [
           "Typ B nach DIN EN 517",
         ],
       },
+      {
+        title: "Flachdach-Absturzsicherungssysteme (B104)",
+        image: "/images/seite10-flachdach.png",
+        content: [
+          "Gefährdungen: Fehlende Sicherungsmaßnahmen bei der Montage an der Absturzkante können zu Absturzunfällen führen. Nichteinhaltung der Mindestabstände tragender Stützen sowie der vorgeschriebenen Ballastierung können zum Versagen des Systems führen.",
+          "Für den Einsatz von Systemen zur Absturzsicherung auf oder an Flachdächern gilt es eine Systemauswahl anhand örtlicher Gegebenheiten zu treffen: Dachbelastung, Dachneigung, Attikaform und -abmessungen, max. Gebäudehöhe (Wind).",
+          "Es gibt Systeme mit Ballastierung oder mit Befestigung direkt am Bauwerk. Aufbau- und Verwendungsanleitung des Herstellers beachten und an der Baustelle bereithalten.",
+          "Flachdach-Absturzsicherungssysteme dürfen nur unter Aufsicht einer fachkundigen Person auf-, ab- oder umgebaut werden. Nur längere zusammenhängende Abschnitte möglichst an allen Dachkanten montieren. Häufiges Umsetzen vermeiden.",
+          "Nicht gesicherte Bereiche mit Kette, Seil, Gitter o.Ä. im Abstand ≥ 2,00 m von der Absturzkante deutlich absperren.",
+          "Beim Hochnehmen von Einzelstützen Mindestabstände tragender Stützen nicht überschreiten, sonst zusätzliche Stützen einsetzen. Sicherungsvorkehrungen bei hohen Windgeschwindigkeiten treffen (z.B. Systeme umklappen oder demontieren).",
+          "Systeme nur absturzgeschützt montieren: unter Anseilschutz an ausreichend tragfähigen Anschlagpunkten oder in mindestens 2,00 m Abstand von der Absturzkante aufbauen und unter dem Schutz des Systems versetzen.",
+        ],
+      },
     ],
     quizQuestions: [
       {
