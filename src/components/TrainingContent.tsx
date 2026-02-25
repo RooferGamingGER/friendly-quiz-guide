@@ -1,5 +1,5 @@
 import { TrainingPage } from "@/data/trainingData";
-import { AlertTriangle, Lightbulb, ChevronLeft, ChevronRight } from "lucide-react";
+import { AlertTriangle, Lightbulb, ChevronLeft, ChevronRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface TrainingContentProps {
@@ -56,6 +56,21 @@ export default function TrainingContent({
               <img src={img} alt={`${page.title} – Bild ${idx + 1}`} className="w-full h-48 object-contain bg-muted/50" />
             </div>
           ))}
+        </div>
+      )}
+
+      {page.downloadUrl && (
+        <div className="mb-6">
+          <a
+            href={page.downloadUrl}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
+          >
+            <Download className="w-4 h-4" />
+            {page.downloadLabel || "PDF herunterladen"}
+          </a>
         </div>
       )}
 

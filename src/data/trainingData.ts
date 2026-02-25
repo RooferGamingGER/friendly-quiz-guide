@@ -12,6 +12,8 @@ export interface TrainingPage {
   warning?: string;
   image?: string;
   images?: string[];
+  downloadUrl?: string;
+  downloadLabel?: string;
 }
 
 export interface QuizQuestion {
@@ -1179,6 +1181,148 @@ export const trainingSections: TrainingSection[] = [
           "Materialbestellung aufgeben",
         ],
         correctIndex: 1,
+      },
+    ],
+  },
+  {
+    id: "dguv-201-056",
+    title: "DGUV 201-056 – Absturzschutz auf Dächern",
+    pages: [
+      {
+        title: "DGUV 201-056 – Überblick & Kernaussage",
+        downloadUrl: "/downloads/DGUV-201-056.pdf",
+        downloadLabel: "DGUV 201-056 als PDF herunterladen",
+        content: [
+          "Die DGUV 201-056 ist ein Planungs- und Bewertungsrahmen, um Dächer so auszustatten, dass spätere Arbeiten (Wartung, Inspektion, Instandsetzung, Betrieb von TGA/PV/RWA/Blitzschutz etc.) sicher und rechtssicher möglich sind.",
+          "Sie verbindet: Bauordnungsrecht (MBO/LBO), Arbeitsschutzrecht (ArbSchG/ArbStättV), ASR A2.1/A1.8, DGUV-Regelwerk (u. a. DGUV Vorschrift 38, Vorschrift 1, Regeln 112-198/199) sowie Normen (DIN EN 17235, DIN EN 13374, DIN 4426 etc.).",
+          "Wichtig: Das STOP-Prinzip / die Rangfolge ist durchgehend leitend: Kollektivschutz vor Individualschutz, permanente Systeme vor temporären.",
+        ],
+        highlights: [
+          "Planungs- und Bewertungsrahmen für Absturzschutz",
+          "STOP-Prinzip: Kollektivschutz vor Individualschutz",
+          "Permanente Systeme vor temporären",
+        ],
+      },
+      {
+        title: "Anwendungsbereich & Begriffsbestimmungen",
+        content: [
+          "Gilt für Auswahl/Bewertung von Absturzschutzsystemen auf baulichen Anlagen und schafft Voraussetzungen für das sichere Betreten/Begehen von Dächern für spätere Arbeiten.",
+          "Gilt NICHT für: Bauarbeiten im engeren Sinne, Maschinen nach Maschinenrichtlinie/-verordnung, Schneeräumung (separat DGUV Info 212-002).",
+          "Gefahrenbereich Absturz: bis 2,00 m zur Absturzkante – dort darf nur gearbeitet werden, wenn Maßnahmen getroffen sind; Kennzeichnung/Absperrung gegen unbefugten Zutritt wird verlangt.",
+          "Anschlageinrichtung: temporär (PSA) vs. permanent (Bauprodukt). Permanente Anschlageinrichtungen sind Bauprodukte.",
+          "Rückhaltesystem: verhindert Erreichen der Kante (präventiv). Auffangsystem: Fall wird aufgefangen (reaktiv) – Verletzungsrisiko bleibt.",
+          "Durchsturzsicher: muss über Lebensdauer dynamische Belastungen aufnehmen; Nachweis erforderlich.",
+          "Notfallprävention/Rettung: Rettung muss planbar sein; bei PSA zwingend Rettungskonzept inkl. Gerät/Personal.",
+        ],
+        highlights: [
+          "Gefahrenbereich: 2,00 m zur Absturzkante",
+          "Rückhaltesystem (präventiv) vor Auffangsystem (reaktiv)",
+          "Bei PSA: Rettungskonzept zwingend",
+        ],
+      },
+      {
+        title: "Verantwortlichkeiten entlang der Kette",
+        content: [
+          "Bauherrschaft: Gesamtverantwortung, Organisation, Auswahl fachkundiger Beteiligter, Berücksichtigung Arbeitsschutz in Planung/Ausschreibung/Vergabe.",
+          "Eigentümer: Instandhaltung + Verkehrssicherungspflicht (u. a. § 823 BGB).",
+          "Betreiber: Gebäude/Anlagen verkehrssicher halten, Gefahren erkennen/beseitigen; Verantwortung kann erweitert sein (Stand der Technik).",
+          "Auftraggebende: Fachfirmen auswählen; Unterweisungsniveau prüfen, Subunternehmer-Weitergabe, Benennung Anlagenverantwortliche.",
+          "Planende: spätere Arbeiten sicher ermöglichen; Haftung bei Pflichtverletzungen.",
+          "Hersteller/Inverkehrbringer: Produkte norm-/zulassungskonform, Montage-/Wartungsunterlagen bereitstellen.",
+          "Auftragnehmende: nur zugelassene Produkte, Dokumente übergeben, auf Abweichungen/Nachrüstbedarf hinweisen.",
+        ],
+        highlights: [
+          "Bauherrschaft: Gesamtverantwortung",
+          "Planende: Haftung bei Pflichtverletzung",
+          "Betreiber: Verkehrssicherungspflicht",
+        ],
+      },
+      {
+        title: "Planung – Rangfolge & Ausstattungsklassen",
+        content: [
+          "Maßnahmen nach Rangfolgenprinzip/STOP festlegen; Kollektivschutz vor Individualschutz. Individuelle Maßnahmen nur, wenn Kollektivschutz konstruktiv nicht geht.",
+          "Gefahrenbereich Absturz: 2,00 m um jede Absturzkante; Kennzeichnen/Absperren. Innenabsturz (Lichtkuppeln/Lichtbänder) UND Außenabsturz (Kanten) betrachten.",
+          "Klassifizierungs-Matrix koppelt: Personengruppe (I–III), Nutzung/Wartungsintensität (hoch/mittel/gering) → Ausstattungsklassen AK-A / AK-B / AK-C.",
+          "Personengruppe I: PSA-unterwiesen/qualifiziert. Gruppe II: nicht PSA-unterwiesen, aber beauftragt. Gruppe III: öffentlicher Personenverkehr.",
+          "Verkehrswege/Arbeitsplätze auch auf Rutschgefahr bewerten (Neigung, Oberfläche, Witterung: Raureif/Regen/Eis/Wind); ggf. Laufstege/Dachleitern.",
+        ],
+        highlights: [
+          "AK-A: Kollektivschutz dominiert",
+          "AK-B: permanente Seil-/Schienensysteme",
+          "AK-C: Minimalstandard, hohe Anforderungen an Benutzende",
+        ],
+      },
+      {
+        title: "Ausstattungsklassen im Detail",
+        content: [
+          "AK-A (hohe Sicherheit): Umwehrung, Seitenschutzsysteme, Laufstege mit Geländer, Dachoberlichter dauerhaft durchsturzsicher, Dachzugang bevorzugt über Gebäude + Treppe/Steigleiter.",
+          "AK-B (liniengeführte Systeme): permanente überfahrbare Seil- oder Schienensysteme (kein Umschlagen nötig), Seilauslenkung gering halten, Rettungskonzept zwingend.",
+          "AK-C (Minimalstandard): nur geplante Arbeiten, PSA-Unterweisung inkl. praktischer Übungen zwingend, Alleinarbeit ausgeschlossen, Rettungskonzept + Gerät + Personal erforderlich.",
+          "Zonenfarben: Grün = Rückhaltebereich (präventiv). Orange = Auffangbereich (Sturz möglich, Rettungskonzept nötig, planerisch minimieren). Rot = nicht sicher begehbar.",
+        ],
+        highlights: [
+          "Grün: Rückhaltesystem – Kante wird nicht erreicht",
+          "Orange: Auffangsystem – Rettungskonzept Pflicht",
+          "Rot: nicht sicher begehbar",
+        ],
+      },
+      {
+        title: "Permanente Anschlageinrichtungen & Sturzraum",
+        content: [
+          "Permanente Anschlageinrichtungen (pAE) sollen idealerweise 2,50 m von der Absturzkante positioniert werden, um Rückhaltewirkung zu erreichen.",
+          "PV-Belegung ist ausdrücklich kein baulicher Zwang, um davon abzuweichen. Rückhaltesysteme sind Auffangsystemen vorzuziehen.",
+          "Rückhalten mit mitlaufendem Auffanggerät: nur bis Abstand zur Kante ≥ 1,50 m sinnvoll sicherzustellen.",
+          "Seilsysteme: Auslenkungsberechnung mit 0,5 kN in Feldmitte; bei Rückhalteanwendung Auslenkung ≤ 0,50 m.",
+          "Freier Sturzraum bei Auffangsystemen: Auslenkung + Verbindungsmittel (~2,00 m) + Falldämpfer (max. 1,75 m) + Körperhöhe (~1,50 m) + Sicherheitsabstand (1,00 m) = ca. 6,25–8,75 m.",
+          "Showstopper: Staffelgeschosse/Balkone/Fassadentechnik können den Sturzraum begrenzen!",
+        ],
+        warning: "Freier Sturzraum: 6,25–8,75 m erforderlich – prüfen, ob baulich vorhanden!",
+        highlights: [
+          "pAE ideal 2,50 m von Absturzkante",
+          "Rückhalten vor Auffangen",
+          "Sturzraum: ca. 6,25–8,75 m",
+        ],
+      },
+      {
+        title: "Errichtung, Benutzung & Instandhaltung",
+        content: [
+          "Montage nach Herstelleranleitung; bei komplexen Untergründen ggf. besondere Qualifizierung nötig. Übereinstimmungserklärung + Einbaudokumentation inkl. Foto nach Fertigstellung übergeben.",
+          "Montageplan als Teil des Zugangs- und Sicherungskonzepts am Dachzustieg zugänglich halten.",
+          "Benutzung PSA: nur durch Personen mit Unterweisung inkl. praktischer Übungen und Rettungsunterweisung. Vor jedem Gebrauch Sichtkontrolle.",
+          "Alleinarbeit: Bei Rückhaltesystemen an Seil-/Schienensystemen möglich (nicht empfohlen). Bei Einzelanschlageinrichtungen: Alleinarbeit ausgeschlossen.",
+          "Instandhaltung: Umwehrung/Geländer – Sichtkontrolle max. 24 Monate. Seitenschutzsysteme – Sicht-/Funktionskontrolle max. 24 Monate + vor Benutzung. PSA – mindestens alle 12 Monate prüfen lassen.",
+          "Prüfung/Instandhaltung durch nachweislich qualifizierte Personen.",
+        ],
+        highlights: [
+          "Übereinstimmungserklärung + Fotodokumentation",
+          "Alleinarbeit bei Einzelanschlagpunkten: ausgeschlossen",
+          "PSA-Prüfung: mind. alle 12 Monate",
+        ],
+      },
+    ],
+    quizQuestions: [
+      {
+        id: "dguv1",
+        question: "Wie groß ist der Gefahrenbereich Absturz laut DGUV 201-056?",
+        options: ["1,00 m zur Absturzkante", "2,00 m zur Absturzkante", "3,00 m zur Absturzkante", "0,50 m zur Absturzkante"],
+        correctIndex: 1,
+      },
+      {
+        id: "dguv2",
+        question: "Welches Prinzip ist laut DGUV 201-056 durchgehend leitend?",
+        options: [
+          "Individualschutz vor Kollektivschutz",
+          "Temporäre Systeme vor permanenten",
+          "STOP-Prinzip: Kollektivschutz vor Individualschutz",
+          "Auffangsysteme vor Rückhaltesystemen",
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: "dguv3",
+        question: "In welchem Abstand zur Absturzkante sollen permanente Anschlageinrichtungen idealerweise positioniert werden?",
+        options: ["1,00 m", "1,50 m", "2,00 m", "2,50 m"],
+        correctIndex: 3,
       },
     ],
   },
