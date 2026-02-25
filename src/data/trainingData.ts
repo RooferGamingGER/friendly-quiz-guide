@@ -624,6 +624,43 @@ export const trainingSections: TrainingSection[] = [
           "Schleifscheiben nicht über das Verfallsdatum hinaus benutzen.",
         ],
       },
+      {
+        title: "Schmelzöfen (B233) – Gefährdungen & Schutzmaßnahmen",
+        images: [
+          "/images/seite18-schmelzofen1.png",
+          "/images/seite18-schmelzofen2.png",
+        ],
+        warning: "Brand- und Explosionsgefahr! Verbrennungsgefahr!",
+        content: [
+          "Gefährdungen: Es kann zu Verbrennungen kommen und es besteht Brand- und Explosionsgefahr.",
+          "Geräte mit mehr als 30 l Füllmenge müssen mit einem Thermometer ausgestattet sein. Geräte mit mehr als 50 l Füllmenge zusätzlich mit Einrichtung zur Verhinderung der Temperaturüberschreitung und Flammenüberwachung.",
+          "Während des Beheizens Geräte nicht unbeaufsichtigt lassen. Schmelzöfen auf nicht brennbaren Unterlagen aufstellen, Abstand zu brennbaren Materialien einhalten.",
+          "Festes Schmelzgut nur langsam in heiße flüssige Masse einlassen, Stulpenhandschuhe benutzen. Behälter nur so weit füllen, dass Überlaufen beim Erhitzen vermieden wird.",
+          "Flüssige heiße Massen nicht mit Wasser in Berührung bringen, Behälter auf Wasserreste überprüfen. Fluchtwege freihalten, Feuerlöscher bereithalten.",
+        ],
+        highlights: [
+          "Ab 30 l: Thermometer erforderlich",
+          "Ab 50 l: Thermometer + Flammenüberwachung",
+          "Nie unbeaufsichtigt lassen",
+        ],
+      },
+      {
+        title: "Schmelzöfen – Flüssiggas-Hinweise",
+        content: [
+          "Versorgungsanlagen so aufstellen, dass die Schutzzone frei von Kelleröffnungen, Luft-/Lichtschächten, Bodenabläufen, Kanaleinläufen sowie Zündquellen ist.",
+          "Flüssiggasflaschen senkrecht aufstellen, gegen Umfallen sichern und Absperrventil vor Beschädigungen schützen. Ventile nicht angeschlossener oder entleerter Flaschen mit Verschlussmuttern verschließen.",
+          "Undichte Flüssiggasflaschen unverzüglich an gut gelüfteter Stelle abstellen und für das Füllwerk kennzeichnen.",
+          "Schlauchverbindungen müssen fest eingebundene Schraubanschlüsse haben oder mit Schlauchklemmen und genormten Schlauchtüllen hergestellt sein.",
+          "Bei Schmelzöfen ohne festgelegten Aufstellort: mind. 1,00 m Abstand zwischen Schmelzofen und Flüssiggasbehälter.",
+          "Hinter dem Druckminderer über Erdgleiche Schlauchbruchsicherung einbauen oder Druckregler mit integrierter Dichtheitsprüfeinrichtung und Schlauchbruchsicherung (Nennwert 1,5 kg/h).",
+          "Prüffristen: Aufstellung und Dichtheit täglich durch Fachkundigen (Benutzer). Gesamte Anlage mind. alle 2 Jahre durch befähigte Person (§ 2 BetrSichVO).",
+        ],
+        highlights: [
+          "Abstand Schmelzofen–Gasflasche: mind. 1,00 m",
+          "Tägliche Dichtheitsprüfung",
+          "Gesamtprüfung alle 2 Jahre",
+        ],
+      },
     ],
     quizQuestions: [
       {
