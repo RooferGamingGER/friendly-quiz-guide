@@ -11,6 +11,7 @@ export interface TrainingPage {
   highlights?: string[];
   warning?: string;
   image?: string;
+  images?: string[];
 }
 
 export interface QuizQuestion {
@@ -38,13 +39,21 @@ export const trainingSections: TrainingSection[] = [
       },
       {
         title: "So geht's richtig!",
+        images: [
+          "/images/seite3-leiter.png",
+          "/images/seite3-laufbohlen.png",
+          "/images/seite3-schutznetz.png",
+          "/images/seite3-psa.png",
+        ],
         content: [
-          "Aufstiege und Zugänge zum Dach: Nicht durchsturzsichere Dächer müssen sicher sein. Anlegeleitern müssen gegen Ausgleiten, Umfallen, Abrutschen und Einsinken gesichert sein. Anlegewinkel von 65–75 Grad einhalten.",
+          "Aufstiege und Zugänge zum Dach müssen sicher sein. So müssen z.B. Anlegeleitern gegen Ausgleiten, Umfallen, Abrutschen und Einsinken gesichert sein. Halten Sie den Anlegewinkel von 65–75 Grad ein.",
+          "Nicht durchsturzsichere Dächer dürfen nur auf Laufbohlen oder Arbeitsstegen betreten werden. Diese müssen mindestens 0,5m breit sein.",
           "An Öffnungen von Dachflächen oder nicht durchsturzsicheren Lichtkuppeln müssen Sicherungen wie z.B. Schutznetze vorhanden sein, die ein Hineinfallen oder -treten verhindern.",
-          "Sofern keine Absturzsicherungen wie Dachfanggerüste zur Verfügung stehen, kann PSA gegen Absturz eingesetzt werden – z.B. wenn Schneelasten zu entfernen sind.",
+          "Sofern es die Umstände erfordern und keine Absturzsicherungen wie Dachfanggerüste zur Verfügung stehen, kann auch PSA gegen Absturz eingesetzt werden. Dies kann z.B. der Fall sein, wenn Schneelasten zu entfernen sind.",
         ],
         highlights: [
           "Anlegewinkel: 65–75 Grad",
+          "Laufbohlen mind. 0,5 m breit",
           "Schutznetze an Öffnungen und Lichtkuppeln",
           "PSA gegen Absturz als letzte Maßnahme",
         ],
