@@ -915,6 +915,38 @@ export const trainingSections: TrainingSection[] = [
           "Staub nach Arbeit abwaschen",
         ],
       },
+      {
+        title: "Alte Mineralwolle-Dämmstoffe (C320) – Gefährdungen & Allgemeines",
+        content: [
+          "Bei Demontage-, Abbruch-, Instandhaltungs- und Instandsetzungsarbeiten besteht grundsätzlich ein Krebsverdacht, wenn die Mineralwolle-Produkte vor dem Jahr 2000 eingebaut wurden.",
+          "Seit dem 01.06.2000 dürfen 'alte' Mineralwolle-Dämmstoffe nicht mehr verwendet werden. Der Umgang ist nur noch bei Demontage-, Abbruch-, Instandhaltungs- und Instandsetzungsarbeiten zulässig.",
+          "Im Rahmen der Gefährdungsbeurteilung ermitteln, ob es sich bei der Mineralwolle um 'alte', krebsverdächtige Produkte handelt.",
+          "Tätigkeiten mit alten Dämmstoffen in das Gefahrstoffverzeichnis aufnehmen (einmalig unternehmensbezogen).",
+          "Die TRGS 521 liefert eine Auflistung von Tätigkeiten mit den entsprechenden Expositionskategorien. Die erforderlichen Schutzmaßnahmen sind gestaffelt und orientieren sich an der Höhe der Faserstaubbelastung sowie der Dauer und Häufigkeit der Arbeiten.",
+        ],
+        warning: "Grundsätzlicher Krebsverdacht bei Mineralwolle-Produkten vor dem Jahr 2000!",
+        highlights: [
+          "Verwendungsverbot seit 01.06.2000",
+          "Gefährdungsbeurteilung zwingend erforderlich",
+          "Schutzmaßnahmen nach TRGS 521 / Expositionskategorie",
+        ],
+      },
+      {
+        title: "Alte Mineralwolle – Schutzmaßnahmen (Expositionskategorie E3)",
+        content: [
+          "Expositionskategorie E3 gilt für alle Tätigkeiten mit hoher bis sehr hoher Staubexposition, z. B. umfangreichere Sanierungsmaßnahmen mit Demontage des Dämmstoffes oder Demontage thermisch belasteter Anlagen in engen, schlecht belüfteten Räumen.",
+          "Material nicht reißen. Motorgetriebene Sägen nur mit Absaugung beim Ausbau verwenden. Ausgebautes Material nicht werfen.",
+          "Für gute Durchlüftung am Arbeitsplatz sorgen. Aufwirbeln von Staub vermeiden.",
+          "Arbeitsplatz sauber halten und regelmäßig mit Staubsauger reinigen. Stäube mit Industriestaubsauger (mindestens Kategorie M) aufnehmen bzw. feucht reinigen – nicht mit Druckluft abblasen oder trocken kehren.",
+          "Während der Arbeit Funktion und Absaugleistung des Entstaubers kontrollieren.",
+          "Abfälle am Entstehungsort möglichst staubdicht verpacken und kennzeichnen. Für den Transport geschlossene Behältnisse (z. B. Tonnen, reißfeste Säcke, Big-Bags) verwenden.",
+        ],
+        highlights: [
+          "Industriestaubsauger mind. Kategorie M",
+          "Material nicht reißen oder werfen",
+          "Abfälle staubdicht verpacken & kennzeichnen",
+        ],
+      },
     ],
     quizQuestions: [
       {
