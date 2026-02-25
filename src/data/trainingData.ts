@@ -683,6 +683,25 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
+        title: "Handbetriebene Scheren & Stanzen (B267)",
+        images: [
+          "/images/seite21-schere1.png",
+          "/images/seite21-schere2.png",
+        ],
+        content: [
+          "Gefährdungen: Schnittverletzungen und Verletzungen durch Anstoßen an vorstehenden oder sich selbsttätig bewegenden Maschinenteilen.",
+          "Maschinen sicher und leicht zugänglich aufstellen. Zulässige Schnittleistung beachten, verschlissene Messer austauschen. Geeignete Blechhebezeuge verwenden.",
+          "Arbeitsplatz von Abfällen freihalten. Bei der Handhabung von Blechen schnittfeste Handschuhe tragen.",
+          "Schlagscheren: Gegengewicht am Messerbalken so ausbalancieren und unverschiebbar feststellen, dass das bewegliche Obermesser nicht selbsttätig niedergehen kann. Schnittlinie auf ganzer Länge durch Schutzleiste oder Balkenniederhalter abdecken.",
+          "Handhebelscheren und -stanzen: Hochgestellte Hebel in Ruhestellung und gegen unbeabsichtigtes Herabfallen sichern. Bei der Aufstellung auf Quetsch- und Scherstellen achten. Werkstück durch Niederhalter gegen Hochkanten sichern.",
+        ],
+        highlights: [
+          "Schnittfeste Handschuhe tragen",
+          "Obermesser gegen selbsttätiges Niedergehen sichern",
+          "Hebel gegen Herabfallen sichern",
+        ],
+      },
+      {
         title: "Schmelzöfen (B233) – Gefährdungen & Schutzmaßnahmen",
         images: [
           "/images/seite18-schmelzofen1.png",
