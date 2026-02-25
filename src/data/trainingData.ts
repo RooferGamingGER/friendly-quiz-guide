@@ -130,19 +130,25 @@ export const trainingSections: TrainingSection[] = [
     title: "Druckgasbehälter – Lagerung & Transport",
     pages: [
       {
-        title: "Lagerung von Druckgasbehältern",
+        title: "Lagerung von Druckgasbehältern (A064)",
         warning: "Brand- und Explosionsgefahr!",
+        images: [
+          "/images/seite5-gaslager.png",
+          "/images/seite5-schutzbereich1.png",
+          "/images/seite5-schutzbereich2.png",
+        ],
         content: [
-          "Unzulässig ist die Lagerung in engen Höfen, Durchgängen und Durchfahrten sowie in der Nähe von Gruben, Kanälen und Abflüssen.",
-          "Betreten des Lagers durch Unbefugte ist untersagt – Hinweisschild am Zugang anbringen.",
-          "Ein Feuerlöscher muss leicht erreichbar vorhanden sein.",
-          "Druckgasbehälter möglichst stehend lagern. Bei liegender Lagerung gegen Fortrollen sichern.",
-          "Druckgasbehälter vor Sonneneinstrahlung geschützt lagern und stehende Flaschen gegen Umfallen sichern.",
-          "Ventile mit Schutzkappen und Verschlussmuttern sichern. Das Umfüllen von Druckgasen in Lagern ist unzulässig.",
+          "Gefährdungen: Bei der Lagerung von Druckgasbehältern besteht Brand- und Explosionsgefahr.",
+          "Unzulässig ist die Lagerung in: engen Höfen, Durchgängen und Durchfahrten, in der Nähe von Gruben, Kanälen, Abflüssen und tieferliegenden Räumen.",
+          "Betreten des Lagers durch Unbefugte ist untersagt. Ein entsprechendes Hinweisschild ist am Zugang zum Lager anzubringen. Es muss ein Feuerlöscher leicht erreichbar vorhanden sein.",
+          "Druckgasbehälter möglichst stehend lagern. Bei liegender Lagerung Flaschen gegen Fortrollen sichern. Druckgasbehälter vor Sonneneinstrahlung geschützt lagern.",
+          "Stehende Druckgasbehälter gegen Umfallen und Herabfallen sichern. Ventile mit Schutzkappen und ggf. Verschlussmuttern sichern. Das Umfüllen von Druckgasen in Lagern ist unzulässig.",
+          "Lager auf nicht umfriedeten Grundstücken im Freien sind einzuzäunen.",
+          "Bei Druckgasbehältern mit brennbaren Gasen dürfen sich im Schutzbereich keine Zündquellen, Gruben, Kanäle, Bodenabläufe, Kellerniedergänge befinden. Der Schutzbereich darf sich nicht auf Nachbargrundstücke und öffentliche Verkehrsflächen erstrecken.",
         ],
         highlights: [
           "Sicherheitsabstand ≥ 5,00 m zu benachbarten Anlagen",
-          "Schutzbereich: max. 2 Seiten durch 2,00 m hohe Schutzwände einengen",
+          "Schutzbereich: max. 2 Seiten durch mind. 2,00 m hohe öffnungslose Schutzwände aus nicht brennbarem Material einengen",
         ],
       },
       {
