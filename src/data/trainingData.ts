@@ -518,15 +518,33 @@ export const trainingSections: TrainingSection[] = [
     title: "Hubarbeitsbühnen & Schuttrutschen",
     pages: [
       {
-        title: "Hubarbeitsbühnen",
+        title: "Hubarbeitsbühnen (B212) – Gefährdungen & Aufstellung",
+        image: "/images/seite17-hubarbeitsbuehne.png",
         warning: "Umsturz-, Absturz- und Quetschgefahr!",
         content: [
-          "Gefährdungen: Umsturz durch Einfahren in Bodenöffnungen, Absturz durch Herausschleudern, Quetschen zwischen Bedienpult und Konstruktionen.",
-          "Hubarbeitsbühne entsprechend Betriebsanleitung standsicher aufstellen und betreiben.",
-          "Hubarbeitsbühne nicht überlasten. Klappbare Schutzgeländer vor Arbeitsbeginn in Schutzstellung bringen.",
-          "Bei Arbeiten im öffentlichen Verkehr gelbe Blinkleuchten einschalten.",
-          "PSA gegen Absturz an den vom Hersteller vorgegebenen Anschlagpunkten im Arbeitskorb befestigen.",
-          "Nur unterwiesene und beauftragte Personen dürfen Hubarbeitsbühnen bedienen.",
+          "Gefährdungen: Umsturz durch Einfahren in Bodenöffnungen oder Überfahren von Absätzen. Absturz durch Herausschleudern, Verlassen des Arbeitskorbes im angehobenen Zustand, Aufsteigen auf das Geländer oder Angefahrenwerden durch andere Fahrzeuge.",
+          "Quetschgefahr: Einquetschen zwischen Bedienpult bzw. Geländer und Teilen der Umgebung durch Fehlbedienung.",
+          "Aufstellung: Hubarbeitsbühne entsprechend der Betriebsanleitung standsicher aufstellen und betreiben. Bei Aufstellung und Betrieb auf Quetsch- und Scherstellen achten.",
+        ],
+        highlights: [
+          "Standsicher nach Betriebsanleitung aufstellen",
+          "Auf Quetsch- und Scherstellen achten",
+        ],
+      },
+      {
+        title: "Hubarbeitsbühnen – Betrieb & Beschäftigungsbeschränkungen",
+        content: [
+          "Hubarbeitsbühne nicht überlasten. Den Bereich unter seitlich ausgeschwenkten Arbeitsplattformen sichern, wenn sie im Verkehrsbereich niedriger als 4,50 m über Gelände abgesenkt sind.",
+          "Bei Arbeiten im öffentlichen Straßenverkehr gelbe Blinkleuchten einschalten. Klappbare Schutzgeländer vor Arbeitsbeginn in Schutzstellung bringen.",
+          "PSA gegen Absturz an den vom Hersteller vorgegebenen Anschlagpunkten im Arbeitskorb befestigen. Verbindungsmittel so kurz wie möglich halten, damit Personen nicht herausgeschleudert werden können.",
+          "Beim Verfahren dürfen sich Beschäftigte nur auf der Arbeitsbühne aufhalten, wenn dies im Betriebshandbuch bescheinigt ist.",
+          "Beschäftigungsbeschränkungen: Nur Personen einsetzen, die mindestens 18 Jahre alt und zuverlässig sind, in der Bedienung unterwiesen und vom Unternehmer beauftragt sind.",
+        ],
+        highlights: [
+          "Sicherung unter 4,50 m im Verkehrsbereich",
+          "PSA-Verbindungsmittel so kurz wie möglich",
+          "Mindestalter: 18 Jahre",
+          "Unterweisung + Beauftragung erforderlich",
         ],
       },
       {
