@@ -43,6 +43,16 @@ export default function TrainingContent({
         </div>
       )}
 
+      {page.image && (
+        <div className="mb-6 rounded-xl overflow-hidden border border-border">
+          <img
+            src={page.image}
+            alt={page.title}
+            className="w-full max-h-[400px] object-contain bg-muted/50"
+          />
+        </div>
+      )}
+
       <div className="space-y-4 mb-6">
         {page.content.map((paragraph, idx) => (
           <p key={idx} className="text-base leading-relaxed text-foreground/90">
