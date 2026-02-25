@@ -43,13 +43,19 @@ export default function TrainingContent({
         </div>
       )}
 
-      {page.image && (
+      {page.image && !page.images && (
         <div className="mb-6 rounded-xl overflow-hidden border border-border">
-          <img
-            src={page.image}
-            alt={page.title}
-            className="w-full max-h-[400px] object-contain bg-muted/50"
-          />
+          <img src={page.image} alt={page.title} className="w-full max-h-[400px] object-contain bg-muted/50" />
+        </div>
+      )}
+
+      {page.images && page.images.length > 0 && (
+        <div className={`mb-6 grid gap-3 ${page.images.length === 1 ? "grid-cols-1" : "grid-cols-2"}`}>
+          {page.images.map((img, idx) => (
+            <div key={idx} className="rounded-xl overflow-hidden border border-border">
+              <img src={img} alt={`${page.title} – Bild ${idx + 1}`} className="w-full h-48 object-contain bg-muted/50" />
+            </div>
+          ))}
         </div>
       )}
 
