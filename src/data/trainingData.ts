@@ -1097,6 +1097,25 @@ export const trainingSections: TrainingSection[] = [
           "Praktische Unterweisung Pflicht",
         ],
       },
+      {
+        title: "Checkliste – Arbeiten auf Dächern",
+        content: [
+          "Was ist vor jedem Arbeitsbeginn zu prüfen?",
+          "1. Schaffen Sie sichere Zugänge zum Dach (z. B. Leiter, Treppenturm, Dachaustritt).",
+          "2. Sorgen Sie für sichere Verkehrswege auf dem Dach (z. B. Laufbohlen).",
+          "3. Überprüfen Sie die Absturzsicherungen nach außen und innen (z. B. Gerüste, Schutznetze).",
+          "4. Stellen Sie sicher, dass es Transportmöglichkeiten für Lasten gibt (z. B. Schrägaufzug).",
+          "5. Überprüfen Sie, ob PSA gegen Absturz erforderlich ist. Wenn ja, müssen die Anschlagpunkte vorhanden und gekennzeichnet sein.",
+          "6. Stellen Sie sicher, dass die erforderliche Persönliche Schutzausrüstung getragen wird.",
+          "7. Stellen Sie wirksame Erste-Hilfe-Maßnahmen auch für den Fall auf, dass ein ins Seil gefallener Mitarbeiter gerettet werden muss.",
+        ],
+        highlights: [
+          "Sichere Zugänge & Verkehrswege",
+          "Absturzsicherungen prüfen",
+          "PSA & Anschlagpunkte kontrollieren",
+          "Erste-Hilfe-Maßnahmen festlegen",
+        ],
+      },
     ],
     quizQuestions: [
       {
