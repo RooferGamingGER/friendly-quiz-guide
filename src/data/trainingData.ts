@@ -973,14 +973,35 @@ export const trainingSections: TrainingSection[] = [
     title: "Dacharbeiten & Lichtkuppeln",
     pages: [
       {
-        title: "Dachdeckung mit Wellplatten & Dachlatten",
+        title: "Dachdeckung mit Wellplatten (C343) – Gefährdungen & Transport",
+        image: "/images/seite27-wellplatten.png",
+        warning: "Nicht durchtrittsichere Wellplatten können beim Begehen durchbrechen!",
         content: [
-          "Wellplattendächer nur auf besonderen Lauf- und Arbeitsstegen betreten (Mindestbreite 50 cm).",
-          "Bei Dachneigungen > 11°: Stege mit Trittleisten. Bei > 30°: mit Stufen versehen.",
-          "Dachlatten müssen Qualitäts- bzw. Festigkeitskriterien entsprechen (mind. S10).",
-          "Dachlatten der Klasse S10 sind an den Stirnseiten rot eingefärbt.",
-          "Für Arbeiten auf Flächen mit mehr als 45° Neigung besondere Arbeitsplätze schaffen.",
-          "Beschädigte Dachlatten (z.B. aufgerissene Stirnseiten) ausbauen.",
+          "Fehlende Sicherungsmaßnahmen an den Gebäudeaußenkanten und nach innen können Absturzunfälle zur Folge haben. Nicht durchtrittsichere Wellplatten können beim Begehen durchbrechen.",
+          "Die Demontage von asbesthaltigen Platten ohne persönliche Schutzmaßnahmen kann in der Folge zu Erkrankungen führen.",
+          "Beim Transport mit Aufzügen oder Hebezeugen geeignete Lastaufnahmemittel (z. B. Spezialschlitten oder Plattenzangen) benutzen.",
+          "Bei der Lagerung der Platten auf dem Dach die Tragfähigkeit der Unterkonstruktion beachten. Platten bzw. Stapel gegen Windangriff sichern (z. B. durch Spannbänder).",
+          "Gefahrenbereich unter den Verlegestellen absperren und kennzeichnen. Dachüberstände (auskragende Platten) nicht belasten.",
+        ],
+        highlights: [
+          "Geeignete Lastaufnahmemittel beim Transport",
+          "Platten gegen Wind sichern",
+          "Gefahrenbereich absperren & kennzeichnen",
+        ],
+      },
+      {
+        title: "Dachdeckung mit Wellplatten – Laufstege",
+        content: [
+          "Wellplattendächer nur auf besonderen Lauf- und Arbeitsstegen betreten.",
+          "Lauf- und Arbeitsstege müssen eine Mindestbreite von 50 cm haben und gegen Verschieben und Abrutschen gesichert werden.",
+          "Lauf- und Arbeitsstege aus Holz müssen mindestens der Sortierklasse S10 oder MS10 entsprechen.",
+          "Bei Dachneigungen über 11° (1:5): Stege mit Trittleisten. Bei Neigungen über 30° (1:1,75): mit Stufen versehen.",
+          "Zu Anlagen und Einrichtungen auf dem Dach, die ständiger Wartung bedürfen, mindestens 50 cm breite Laufstege mit beidseitigem Seitenschutz vorsehen.",
+        ],
+        highlights: [
+          "Mindestbreite Laufstege: 50 cm",
+          "Ab 11° Trittleisten, ab 30° Stufen",
+          "Holz mind. Sortierklasse S10 / MS10",
         ],
       },
       {
