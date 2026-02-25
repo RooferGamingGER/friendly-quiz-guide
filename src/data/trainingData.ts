@@ -196,18 +196,23 @@ export const trainingSections: TrainingSection[] = [
     title: "Absturzsicherungen auf Baustellen",
     pages: [
       {
-        title: "Absturzsicherungen – Grundlagen",
+        title: "Absturzsicherungen auf Baustellen (B100)",
+        image: "/images/seite7-absturzsicherung.png",
         content: [
-          "Fehlende, unvollständig aufgebaute oder falsch dimensionierte Absturzsicherungen können Absturzunfälle zur Folge haben.",
-          "Absturzsicherungen durch Seitenschutz bzw. Absperrungen sind an Arbeitsplätzen und Verkehrswegen erforderlich.",
-          "Auf Seitenschutz kann verzichtet werden, wenn in mindestens 2,00 m Abstand von der Absturzkante eine feste Absperrung angebracht ist (kein Flatterband!).",
-          "PSA gegen Absturz darf nur verwendet werden, wenn weder Seitenschutz noch Auffangeinrichtungen möglich sind.",
-          "Der Vorgesetzte hat die Anschlageinrichtungen festzulegen und für die Benutzung der PSAgA zu sorgen.",
+          "Gefährdungen: Fehlende, unvollständig aufgebaute oder falsch dimensionierte Absturzsicherungen sowie fehlende Sicherungsmaßnahmen bei der Montage können Absturzunfälle zur Folge haben.",
+          "Absturzsicherungen durch Seitenschutz bzw. Absperrungen sind erforderlich z.B. an: Arbeitsplätzen und Verkehrswegen an oder über Wasser oder anderen Stoffen, in denen man versinken kann (unabhängig von der Absturzhöhe); frei liegenden Treppenläufen und Wandöffnungen bei mehr als 1,00 m Absturzhöhe; allen übrigen Arbeitsplätzen bei mehr als 2,00 m Absturzhöhe; Absturzkanten von Öffnungen ≥ 9,00 m² und Kantenlängen ≥ 3,00 m.",
+          "An Arbeitsplätzen auf Flächen mit nicht mehr als 22,5° Neigung kann auf Seitenschutz verzichtet werden, wenn in mindestens 2,00 m Abstand von der Absturzkante eine feste Absperrung angebracht ist (z.B. Geländer, Ketten, Seile – jedoch keine Trassierbänder).",
+          "Auf Seitenschutz kann nur verzichtet werden, wenn stattdessen Auffangeinrichtungen (Fanggerüste/Dachfanggerüste/Auffangnetze/Schutzwände) vorhanden sind. Nur wenn auch diese unzweckmäßig sind, darf PSAgA verwendet werden.",
+          "Der Vorgesetzte hat die Anschlageinrichtungen festzulegen und dafür zu sorgen, dass die PSAgA benutzt wird.",
+          "Bei Öffnungen ≤ 9,00 m² und Kantenlängen ≤ 3,00 m kann auf Seitenschutz verzichtet werden, wenn diese mit begehbaren und unverschiebbar angebrachten Abdeckungen versehen sind.",
         ],
         highlights: [
           "Rangfolge: Seitenschutz → Auffangeinrichtungen → PSAgA",
           "Absperrung mindestens 2,00 m von Absturzkante",
           "Trassierbänder sind keine Absperrungen!",
+          "Pfostenabstand bis 2,00 m: Bretter mind. 15 × 3 cm",
+          "Pfostenabstand bis 3,00 m: Bretter mind. 20 × 4 cm",
+          "Bordbretter: mind. 15 cm über Belag, mind. 3 cm dick",
         ],
       },
       {
