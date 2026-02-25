@@ -1,0 +1,184 @@
+import { useState } from "react";
+import { trainingSections, QuizQuestion } from "@/data/trainingData";
+import { Button } from "@/components/ui/button";
+import { CheckCircle2, XCircle, Award, RotateCcw } from "lucide-react";
+
+interface QuizSectionProps {
+  onRestart: () => void;
+}
+
+export default function QuizSection({ onRestart }: QuizSectionProps) {
+  const allQuestions = trainingSections.flatMap((s) =>
+    s.quizQuestions.map((q) => ({ ...q, sectionTitle: s.title }))
+  );
+
+  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSelect = (questionId: string, optionIndex: number) => {
+    if (submitted) return;
+    setAnswers((prev) => ({ ...prev, [questionId]: optionIndex }));
+  };
+
+  const handleSubmit = () => {
+    setSubmitted(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const correctCount = allQuestions.filter(
+    (q) => answers[q.id] === q.correctIndex
+  ).length;
+  const totalCount = allQuestions.length;
+  const allAnswered = allQuestions.every((q) => answers[q.id] !== undefined);
+  const passed = correctCount >= Math.ceil(totalCount * 0.8);
+
+  // Group by section
+  const sections = trainingSections.map((s) => ({
+    title: s.title,
+    questions: s.quizQuestions,
+  }));
+
+  return (
+    <div className="max-w-3xl mx-auto">
+      {submitted ? (
+        <div className="text-center mb-10">
+          <div
+            className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 ${
+              passed ? "bg-success/15" : "bg-danger/15"
+            }`}
+          >
+            {passed ? (
+              <Award className="w-10 h-10 text-success" />
+            ) : (
+              <XCircle className="w-10 h-10 text-danger" />
+            )}
+          </div>
+          <h1 className="text-3xl font-bold mb-2">
+            {passed ? "Bestanden!" : "Leider nicht bestanden"}
+          </h1>
+          <p className="text-lg text-muted-foreground mb-2">
+            {correctCount} von {totalCount} Fragen richtig beantwortet
+          </p>
+          <div className="w-full max-w-xs mx-auto h-3 bg-muted rounded-full overflow-hidden mb-4">
+            <div
+              className={`h-full rounded-full transition-all duration-700 ${
+                passed ? "bg-success" : "bg-danger"
+              }`}
+              style={{ width: `${(correctCount / totalCount) * 100}%` }}
+            />
+          </div>
+          <p className="text-sm text-muted-foreground mb-6">
+            {passed
+              ? "Herzlichen Glückwunsch! Sie haben die Wissenskontrolle bestanden."
+              : "Mindestens 80% richtige Antworten sind erforderlich. Bitte wiederholen Sie die Schulung."}
+          </p>
+          <Button onClick={onRestart} variant="outline" className="gap-2">
+            <RotateCcw className="w-4 h-4" />
+            {passed ? "Schulung erneut durchführen" : "Schulung wiederholen"}
+          </Button>
+        </div>
+      ) : (
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold mb-2">Wissenskontrolle</h1>
+          <p className="text-muted-foreground">
+            Beantworten Sie alle Fragen. Mindestens 80% müssen richtig sein.
+          </p>
+        </div>
+      )}
+
+      <div className="space-y-10">
+        {sections.map((section) => (
+          <div key={section.title}>
+            <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-primary/20">
+              {section.title}
+            </h2>
+            <div className="space-y-6">
+              {section.questions.map((q, qIdx) => {
+                const selected = answers[q.id];
+                const isCorrect = submitted && selected === q.correctIndex;
+                const isWrong = submitted && selected !== undefined && selected !== q.correctIndex;
+
+                return (
+                  <div
+                    key={q.id}
+                    className={`p-5 rounded-xl border transition-all ${
+                      submitted
+                        ? isCorrect
+                          ? "bg-success/5 border-success/30"
+                          : isWrong
+                          ? "bg-danger/5 border-danger/30"
+                          : "bg-card border-border"
+                        : "bg-card border-border safety-card"
+                    }`}
+                  >
+                    <p className="font-semibold mb-4 text-foreground">
+                      {q.question}
+                    </p>
+                    <div className="space-y-2">
+                      {q.options.map((opt, optIdx) => {
+                        const isSelected = selected === optIdx;
+                        const isCorrectOption = submitted && optIdx === q.correctIndex;
+                        const isWrongSelected = submitted && isSelected && optIdx !== q.correctIndex;
+
+                        return (
+                          <button
+                            key={optIdx}
+                            onClick={() => handleSelect(q.id, optIdx)}
+                            disabled={submitted}
+                            className={`w-full text-left p-3 rounded-lg border text-sm transition-all flex items-center gap-3 ${
+                              isCorrectOption
+                                ? "bg-success/10 border-success/40 text-success font-medium"
+                                : isWrongSelected
+                                ? "bg-danger/10 border-danger/40 text-danger"
+                                : isSelected
+                                ? "bg-primary/10 border-primary/40 text-primary font-medium"
+                                : "bg-background border-border hover:border-primary/30 text-foreground/80"
+                            } ${submitted ? "cursor-default" : "cursor-pointer"}`}
+                          >
+                            <span
+                              className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 text-xs font-bold ${
+                                isCorrectOption
+                                  ? "border-success bg-success text-success-foreground"
+                                  : isWrongSelected
+                                  ? "border-danger bg-danger text-danger-foreground"
+                                  : isSelected
+                                  ? "border-primary bg-primary text-primary-foreground"
+                                  : "border-muted-foreground/30"
+                              }`}
+                            >
+                              {isCorrectOption && submitted ? (
+                                <CheckCircle2 className="w-4 h-4" />
+                              ) : isWrongSelected ? (
+                                <XCircle className="w-4 h-4" />
+                              ) : (
+                                String.fromCharCode(65 + optIdx)
+                              )}
+                            </span>
+                            {opt}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {!submitted && (
+        <div className="mt-10 flex justify-center">
+          <Button
+            size="lg"
+            onClick={handleSubmit}
+            disabled={!allAnswered}
+            className="text-base px-10"
+          >
+            Antworten auswerten ({Object.keys(answers).length}/{totalCount} beantwortet)
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+}
