@@ -423,21 +423,35 @@ export const trainingSections: TrainingSection[] = [
     title: "Leitern & Aufzüge",
     pages: [
       {
-        title: "Anlegeleitern",
+        title: "Anlegeleitern (B131) – Gefährdungen & Schutzmaßnahmen",
+        image: "/images/seite14-anlegeleiter.png",
         content: [
-          "Vor dem Einsatz einer Leiter im Rahmen der Gefährdungsbeurteilung prüfen, ob ein sichereres Arbeitsmittel möglich ist.",
-          "Leitern sind nur für Arbeiten mit geringer Gefährdung, geringem Arbeitsumfang und geringer Dauer zu verwenden.",
-          "Anlegeleitern gegen Ausgleiten, Umfallen, Umkanten, Abrutschen und Einsinken sichern.",
-          "Richtiger Anlegewinkel: Sprossenanlegeleitern 65–75°, Stufenanlegeleitern 60–70°.",
-          "Mindestens 1 m über die Austrittsstelle hinausragen lassen.",
-          "Die obersten 3 Sprossen/Stufen nicht betreten!",
-          "Bei Bauarbeiten und Standhöhe > 2,00 m nicht länger als 2 Stunden arbeiten. Max. 10 kg Werkzeug/Material mitführen.",
+          "Gefährdungen: Mangelhafte Standsicherheit des Leiterbenutzers oder der Leiter, Fehlverhalten, fehlende Sicherung im Verkehrsbereich oder die Benutzung einer schadhaften Leiter können Absturzunfälle zur Folge haben.",
+          "Im Rahmen der Gefährdungsbeurteilung ist zu ermitteln, ob der Einsatz einer Leiter erforderlich oder ein anderes Arbeitsmittel sicherer ist. Der Einsatz von Leitern ist auf Arbeiten mit geringer Gefährdung, geringem Arbeitsumfang und geringer Dauer zu beschränken.",
+          "Anlegeleitern gegen Ausgleiten, Umfallen, Umkanten, Abrutschen und Einsinken sichern. Standsicherheit durch Einhängepodeste verbessern. Schadhafte Leitern nicht benutzen, keine deckenden Anstriche verwenden.",
+          "Richtiger Anlegewinkel: Sprossenanlegeleitern 65–75°, Stufenanlegeleitern 60–70°. Leitern nur an sichere Stützpunkte anlehnen. Mindestens 1 m über die Austrittsstelle hinausragen lassen.",
+          "Leitern nur mit geeignetem, sauberem Schuhwerk betreten. Die obersten 3 Sprossen/Stufen nicht betreten!",
         ],
         highlights: [
           "Anlegewinkel Sprossenleiter: 65–75°",
           "Oberste 3 Sprossen nicht betreten",
+          "Mind. 1 m Überstand über Austrittsstelle",
+        ],
+      },
+      {
+        title: "Anlegeleitern – Mehrteilige Leitern & Arbeitsplätze",
+        content: [
+          "Mehrteilige Anlegeleitern: Leiter nur bis zu der vom Hersteller angegebenen Länge zusammenstecken oder ausziehen. Gegen Durchbiegen sichern.",
+          "Bei Schiebeleitern auf freie Beweglichkeit der Leiterteile sowie auf ordnungsgemäßes Einrasten der Feststelleinrichtungen achten. Auf sichere Verbindung der Leiter-Steckanschlüsse achten.",
+          "Kopfpolster bzw. Anlegeklotz nur an sichere Stützpunkte anlehnen.",
+          "Bei Bauarbeiten und Standhöhe > 2,00 m: nicht länger als 2 Stunden arbeiten, max. 10 kg Werkzeug/Material mitführen, Windangriffsfläche mitgeführter Gegenstände max. 1,00 m².",
+          "Es soll kein höherer Standplatz als 5,00 m eingenommen werden.",
+        ],
+        highlights: [
           "Max. Standhöhe: 5,00 m",
           "Max. Arbeitszeit bei > 2 m: 2 Stunden",
+          "Max. 10 kg Werkzeug/Material",
+          "Windangriffsfläche max. 1,00 m²",
         ],
       },
       {
