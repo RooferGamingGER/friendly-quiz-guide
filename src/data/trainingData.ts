@@ -455,14 +455,36 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
-        title: "Anlegeaufzüge",
+        title: "Anlegeaufzüge (B142) – Aufstellung & Betrieb",
+        images: [
+          "/images/seite15-aufzug1.png",
+          "/images/seite15-aufzug2.png",
+        ],
         content: [
-          "Aufzug standsicher nach Betriebsanleitung aufstellen. Fahrwerk entlasten und Grundrahmen horizontal ausrichten.",
-          "Zulässige Höchstlast gemäß Belastungsanzeige einhalten.",
-          "Nur geeignete Lastaufnahmemittel verwenden. Für lose Lasten (z.B. Dachziegel) umwehrte Mittel nutzen.",
-          "Befördern von Personen mit der Last ist verboten! Benutzung der Fahrbahn als Leiter ist verboten!",
-          "Bei Abnahmestelle > 2,00 m Höhe: Absturzsicherungen vorsehen.",
-          "Untere Ladestelle absperren (ausgenommen Zugang).",
+          "Gefährdungen: Fehlende Sicherungsmaßnahmen bei Montage/Demontage sowie mangelhafte Absturzsicherung an hochgelegenen Ladestellen können zu Absturzunfällen führen. Außerdem Verletzungsgefahr durch herabfallende Gegenstände.",
+          "Aufstellung: Aufzug standsicher nach Betriebsanleitung aufstellen. Fahrwerk durch Herausdrehen der Spindeln entlasten und Grundrahmen horizontal ausrichten. Anlegeaufzüge ohne Fahrwerk am Aufstellplatz unverschiebbar festlegen.",
+          "Zulässige Höchstlast gemäß Belastungsanzeige einhalten. Flach geneigte Aufzugsfahrbahnen gemäß Betriebsanleitung abstützen.",
+          "Betrieb: Für den elektrischen Anschluss nur einen besonderen Speisepunkt verwenden. Nur geeignete Lastaufnahmemittel verwenden – für lose Lasten (z.B. Dachziegel) müssen diese umwehrt sein (Öffnungsweiten max. 5 × 5 cm).",
+          "Das Befördern von Personen mit der Last oder dem Lastaufnahmemittel sowie die Benutzung der Fahrbahn als Leiter sind verboten!",
+        ],
+        highlights: [
+          "Personenbeförderung verboten!",
+          "Öffnungsweiten Lastaufnahmemittel: max. 5 × 5 cm",
+        ],
+      },
+      {
+        title: "Anlegeaufzüge – Obere & untere Ladestelle",
+        image: "/images/seite15-aufzug3.png",
+        content: [
+          "Obere Ladestelle: Liegt die Abnahmestelle höher als 2,00 m, sind Absturzsicherungen vorzusehen.",
+          "Wird die Fahrbahn bis auf das Dach geführt, darf die vorhandene Dachfangwand nur für die Durchfahrt des Lastaufnahmemittels unterbrochen sein. Wird der Aufzug nicht benutzt, ist die unterbrochene Dachfangwand zu schließen.",
+          "Besser ist es, die Fahrbahn des Aufzuges über die nicht unterbrochene Dachfangwand hinwegzuführen.",
+          "Untere Ladestelle: Bereich der unteren Ladestelle absperren (ausgenommen: Zugang).",
+        ],
+        highlights: [
+          "Ab 2,00 m Höhe: Absturzsicherung erforderlich",
+          "Dachfangwand bei Nichtbenutzung schließen",
+          "Untere Ladestelle absperren",
         ],
       },
     ],
