@@ -1005,15 +1005,33 @@ export const trainingSections: TrainingSection[] = [
         ],
       },
       {
-        title: "Lichtkuppeln",
+        title: "Lichtkuppeln (C346) – Gefährdungen & Allgemeines",
+        images: ["/images/seite29-lichtkuppel1.png", "/images/seite29-lichtkuppel2.png", "/images/seite29-lichtkuppel3.png"],
         warning: "Durchsturzgefahr bei nicht gesicherten Lichtkuppeln!",
         content: [
           "Nicht gesicherte Öffnungen oder nicht durchsturzsichere Lichtkuppeln können zu Absturzunfällen führen.",
-          "An Öffnungen in Dachflächen müssen Einrichtungen vorhanden sein, die Abstürzen verhindern.",
-          "Eingebaute Lichtkuppeln gelten im Allgemeinen als NICHT durchsturzsicher!",
-          "Sicherung durch: Seitenschutz, Schutzabdeckungen, Schutznetze, Absperrungen oder durchsturzsichere Unterbauten.",
-          "Trassierbänder (Flatterleinen) sind KEINE zulässigen Absperrmittel!",
-          "Abdeckungen müssen unverschieblich und tragfähig sein (mind. Sortierklasse S10).",
+          "An Öffnungen in Decken und Dachflächen müssen Einrichtungen vorhanden sein, die ein Abstürzen, Hineinfallen oder Hineintreten von Beschäftigten verhindern.",
+          "Als Öffnungen gelten: Öffnungen/Aussparungen mit einer Fläche von ≤ 9 m² oder geradlinig begrenzte Öffnungen, bei denen eine Kante ≤ 3 m lang ist.",
+          "Kanten größerer Öffnungen gelten als Absturzkanten und müssen durch Absturzsicherungen gesichert werden.",
+        ],
+        highlights: [
+          "Öffnungen: ≤ 9 m² Fläche oder Kante ≤ 3 m",
+          "Größere Kanten = Absturzkanten",
+        ],
+      },
+      {
+        title: "Lichtkuppeln – Schutzmaßnahmen",
+        content: [
+          "Ein Abstürzen, Hineinfallen oder Hineintreten verhindern durch: dreiteiligen Seitenschutz oder unverschiebliche und tragfähige Abdeckung der Öffnung.",
+          "Abdeckungen mit Brettern und Bohlen müssen mindestens der Sortierklasse S10 oder MS10 nach DIN 4074-1 entsprechen.",
+          "Absperrungen z. B. durch Geländer, Ketten oder Seile erstellen. Trassierbänder (Flatterleinen) NICHT als Absperrmittel verwenden!",
+          "Eingebaute Lichtkuppeln und Lichtbänder gelten im Allgemeinen als NICHT durchsturzsicher und sind z. B. durch folgende Maßnahmen zu sichern: Seitenschutz, Schutzabdeckungen, Schutznetze, Absperrungen, durchsturzsichere Unterbauten (DIN 4426) oder Verwendung von PSAgA.",
+          "Als durchsturzsicher gelten Bauteile nur, wenn die Tragfähigkeit nachgewiesen worden ist.",
+        ],
+        highlights: [
+          "Seitenschutz oder tragfähige Abdeckung (S10)",
+          "Flatterleinen KEINE Absperrmittel!",
+          "Lichtkuppeln = grundsätzlich NICHT durchsturzsicher",
         ],
       },
       {
