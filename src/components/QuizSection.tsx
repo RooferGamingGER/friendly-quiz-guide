@@ -1,16 +1,83 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { trainingSections, QuizQuestion } from "@/data/trainingData";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, XCircle, Award, RotateCcw } from "lucide-react";
+
+const QUIZ_SIZE = 40;
 
 interface QuizSectionProps {
   onRestart: () => void;
 }
 
+function selectQuizQuestions(seed: number): { title: string; questions: QuizQuestion[] }[] {
+  // Seeded random for reproducibility within a session
+  let s = seed;
+  const random = () => {
+    s = (s * 16807 + 0) % 2147483647;
+    return s / 2147483647;
+  };
+
+  const sectionPools = trainingSections.map((sec) => ({
+    title: sec.title,
+    questions: [...sec.quizQuestions],
+  }));
+
+  // Shuffle each section's questions
+  for (const pool of sectionPools) {
+    for (let i = pool.questions.length - 1; i > 0; i--) {
+      const j = Math.floor(random() * (i + 1));
+      [pool.questions[i], pool.questions[j]] = [pool.questions[j], pool.questions[i]];
+    }
+  }
+
+  // Step 1: Pick at least 1 from each section
+  const selected = new Set<string>();
+  const sectionSelected: Map<string, QuizQuestion[]> = new Map();
+
+  for (const pool of sectionPools) {
+    const q = pool.questions[0];
+    selected.add(q.id);
+    sectionSelected.set(pool.title, [q]);
+  }
+
+  // Step 2: Fill remaining slots from all sections
+  const remaining = QUIZ_SIZE - selected.size;
+  const allRemaining: { title: string; question: QuizQuestion }[] = [];
+  for (const pool of sectionPools) {
+    for (const q of pool.questions) {
+      if (!selected.has(q.id)) {
+        allRemaining.push({ title: pool.title, question: q });
+      }
+    }
+  }
+
+  // Shuffle remaining
+  for (let i = allRemaining.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [allRemaining[i], allRemaining[j]] = [allRemaining[j], allRemaining[i]];
+  }
+
+  for (let i = 0; i < remaining && i < allRemaining.length; i++) {
+    const item = allRemaining[i];
+    const arr = sectionSelected.get(item.title) || [];
+    arr.push(item.question);
+    sectionSelected.set(item.title, arr);
+  }
+
+  // Return grouped by section, preserving section order
+  return sectionPools
+    .map((pool) => ({
+      title: pool.title,
+      questions: sectionSelected.get(pool.title) || [],
+    }))
+    .filter((s) => s.questions.length > 0);
+}
+
 export default function QuizSection({ onRestart }: QuizSectionProps) {
-  const allQuestions = trainingSections.flatMap((s) =>
-    s.quizQuestions.map((q) => ({ ...q, sectionTitle: s.title }))
-  );
+  const [seed, setSeed] = useState(() => Math.floor(Math.random() * 2147483646) + 1);
+
+  const sections = useMemo(() => selectQuizQuestions(seed), [seed]);
+  const allQuestions = useMemo(() => sections.flatMap((s) => s.questions), [sections]);
 
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -25,18 +92,19 @@ export default function QuizSection({ onRestart }: QuizSectionProps) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleRestart = () => {
+    setSeed(Math.floor(Math.random() * 2147483646) + 1);
+    setAnswers({});
+    setSubmitted(false);
+    onRestart();
+  };
+
   const correctCount = allQuestions.filter(
     (q) => answers[q.id] === q.correctIndex
   ).length;
   const totalCount = allQuestions.length;
   const allAnswered = allQuestions.every((q) => answers[q.id] !== undefined);
   const passed = correctCount >= Math.ceil(totalCount * 0.8);
-
-  // Group by section
-  const sections = trainingSections.map((s) => ({
-    title: s.title,
-    questions: s.quizQuestions,
-  }));
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -72,7 +140,7 @@ export default function QuizSection({ onRestart }: QuizSectionProps) {
               ? "Herzlichen Glückwunsch! Sie haben die Wissenskontrolle bestanden."
               : "Mindestens 80% richtige Antworten sind erforderlich. Bitte wiederholen Sie die Schulung."}
           </p>
-          <Button onClick={onRestart} variant="outline" className="gap-2">
+          <Button onClick={handleRestart} variant="outline" className="gap-2">
             <RotateCcw className="w-4 h-4" />
             {passed ? "Schulung erneut durchführen" : "Schulung wiederholen"}
           </Button>
@@ -81,7 +149,7 @@ export default function QuizSection({ onRestart }: QuizSectionProps) {
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-2">Wissenskontrolle</h1>
           <p className="text-muted-foreground">
-            Beantworten Sie alle Fragen. Mindestens 80% müssen richtig sein.
+            Beantworten Sie alle {totalCount} Fragen. Mindestens 80% müssen richtig sein.
           </p>
         </div>
       )}
@@ -93,7 +161,7 @@ export default function QuizSection({ onRestart }: QuizSectionProps) {
               {section.title}
             </h2>
             <div className="space-y-6">
-              {section.questions.map((q, qIdx) => {
+              {section.questions.map((q) => {
                 const selected = answers[q.id];
                 const isCorrect = submitted && selected === q.correctIndex;
                 const isWrong = submitted && selected !== undefined && selected !== q.correctIndex;
