@@ -68,12 +68,8 @@ export default function Index() {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/10 mb-6">
             <HardHat className="w-10 h-10 text-primary" />
           </div>
-          <h1 className="text-4xl font-black mb-3 text-foreground">
-            Sicherheits&shy;unterweisung
-          </h1>
-          <p className="text-lg text-muted-foreground mb-2">
-            Arbeiten auf Dächern – Stand Januar 2025
-          </p>
+          <h1 className="text-4xl font-black mb-3 text-foreground">Sicherheits&shy;unterweisung</h1>
+          <p className="text-lg text-muted-foreground mb-2">Arbeiten auf Dächern – Stand Januar 2026</p>
           <div className="flex items-center justify-center gap-6 my-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <BookOpen className="w-4 h-4 text-primary" />
@@ -84,11 +80,7 @@ export default function Index() {
               <span>Wissenskontrolle</span>
             </div>
           </div>
-          <Button
-            size="lg"
-            onClick={() => setView("training")}
-            className="text-base px-10 gap-2"
-          >
+          <Button size="lg" onClick={() => setView("training")} className="text-base px-10 gap-2">
             Schulung starten
           </Button>
         </div>
