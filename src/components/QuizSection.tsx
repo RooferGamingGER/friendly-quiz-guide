@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { trainingSections, QuizQuestion } from "@/data/trainingData";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, XCircle, Award, RotateCcw } from "lucide-react";
+import { CheckCircle2, XCircle, Award, RotateCcw, Info } from "lucide-react";
 
 const QUIZ_SIZE = 40;
 
