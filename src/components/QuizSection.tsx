@@ -227,6 +227,25 @@ export default function QuizSection({ onRestart }: QuizSectionProps) {
                         );
                       })}
                     </div>
+                    {submitted && isWrong && (
+                      <div className="mt-4 flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
+                        <Info className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                        <div className="text-sm text-foreground/85 leading-relaxed">
+                          <span className="font-semibold text-primary">Erklärung: </span>
+                          {q.explanation ? (
+                            q.explanation
+                          ) : (
+                            <>
+                              Die richtige Antwort lautet{" "}
+                              <span className="font-semibold">
+                                „{q.options[q.correctIndex]}"
+                              </span>
+                              . Diese Option entspricht den geltenden Sicherheitsregeln und Vorschriften (DGUV / Arbeitsschutz) für die beschriebene Situation.
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
               })}
